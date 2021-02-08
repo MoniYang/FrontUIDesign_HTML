@@ -1,0 +1,11 @@
+.togelKing{
+    .logo {
+        @include rwdw(991){
+            max-width: 150px;
+            img{
+               
+                max-width: 100%;
+            }
+        }
+    }
+}

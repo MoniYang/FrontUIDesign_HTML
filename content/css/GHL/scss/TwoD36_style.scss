@@ -1,0 +1,84 @@
+
+.Two36--content{
+    .tab-content > .tab-pane{
+        padding:0px!important;
+    }
+}
+
+.lotto36-list{
+    display: flex;
+    flex-direction: column;
+    height:230px;
+    overflow-y: auto;
+    @include rwdw(1199){
+        height:190px;
+    }
+    @include rwdw(1024){
+        height:160px;
+    }
+    @include rwdw(991){
+        height:auto;
+        ul{
+            &.dice_small{
+                width:100%;
+            }
+        }
+
+    }
+    
+    &::-webkit-scrollbar{
+        width:0px;
+    }
+    &.right-part{
+        height:285px;
+        overflow-y: auto;
+        @include rwdw(1199){
+            height:225px;
+        }
+        &::-webkit-scrollbar{
+            width:0px;
+        }
+        li{
+            padding:8px 0;
+        }
+    }
+    // padding:3px 0;
+    &__item{
+        font-size:font(1.5);
+        color:$white;
+        width:30px;
+        height:30px;
+        text-align: center;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+        border-radius: 0px;
+        @include rwdw(1024){
+            font-size:font(1.3);
+        }
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-evenly;
+        li{
+            background-color:transparent!important;
+        }
+    }  
+    li{
+        background-color:transparent;
+        padding:5px 0;
+        display: flex;
+        align-items: center;
+        &:nth-child(odd) {
+            background-color: #2a2a2a;
+        }
+        &:nth-child(even) {
+            background-color: #404040;
+        }
+        .color_ball_s{
+            margin: auto!important;
+        }
+    }
+}
+

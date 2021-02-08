@@ -1,0 +1,1495 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="GHLFrontDeskView" ng-cloak>
+<head>
+    <!--IE版本自動以最新的啟動-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="application/json; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="copyright" CONTENT="HKGP Lottery 2020 . All Rights Reserved | 18+">
+	<!--<base href="/">-->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js?V=20200803.3"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js?V=20200803.3"></script>
+    <![endif]-->
+    <!--套用的css-->
+    <!--<link href="./Content/css/tether/tether.min.css" rel="stylesheet" type="text/css" />
+    <link href="./Content/css/autocomplete.css" rel="stylesheet" type="text/css" />-->
+    <!-- Custom CSS -->
+    <!-- CORE CSS -->
+    <link href="./Content/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="./Content/css/angular-block-ui/angular-block-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="./Content/css/GHL/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="./Content/css/GHL/GHL.Style.css?V=2021202.2" rel="stylesheet" type="text/css" />
+    <link href="./Content/css/GHL/header.css?V=20210111.1" rel="stylesheet" type="text/css" />
+    <link href="./Content/css/odometer/odometer-theme-car.css" rel="stylesheet" type="text/css" />
+    <link href="./Content/css/owl.carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="./Content/css/owl.carousel/owl.theme.default.css" rel="stylesheet" type="text/css" />
+    <link href="./content/css/mute.css" rel="stylesheet">
+    <link href="./scripts/video-js-7.0.0/video-js.min.css" rel="stylesheet" />
+
+    <!--引用的JS檔-->
+    <script type="text/javascript" src="./scripts/jquery/jquery-3.4.1.min.js?V=20200803.3"></script>
+
+    <script type="text/javascript" src="./scripts/bootstrap/bootstrap.js?V=20200803.3"></script>
+    <!-- <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-touch.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-scenario.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-sanitize.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-route.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-resource.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-mocks.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-messages.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-message-format.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-loader.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-cookies.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-aria.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-animate.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-local-storage.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angularjs/1.6.0/angular-parse-ext.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angular-ui/autocomplete.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angular-block-ui/angular-block-ui.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angular-loading-bar/loading-bar.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angular-translate/angular-translate.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angular-translate/angular-translate-loader-url.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/angular-translate/angular-translate-loader-static-files.js?V=20200803.3"></script> -->
+    <script type="text/javascript" src="./scripts/jquery/jquery.pushy.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/odometer/odometer.js?V=20200803.3"></script>
+
+    <!-- owl.carousel quicklinks 用 -->
+    <script type="text/javascript" src="./scripts/owlcarousel/owl.carousel.js?V=20200803.3"></script>
+   
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="./scripts/video-js-7.0.0/video.js"></script>
+    <!-- 子母畫面專用 -->
+    <script type="text/javascript" src="./scripts/jquery-ui/jquery-ui-1.11.4.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/jquery-ui/jquery.ui.touch-punch.min.js?V=20200803.3"></script>
+    <script type="text/javascript" src="./scripts/jquery.signalR/jquery.signalR-2.4.1.min.js?V=20200803.3"></script>
+	
+    <!-- <script type="text/javascript" src="app/Language/en-US.json"></script>
+    <script type="text/javascript" src="app/Language/id-ID.json"></script>
+    <script type="text/javascript" src="app/Language/zh-CN.json"></script>
+    <script type="text/javascript" src="app/Language/zh-TW.json"></script> -->
+    <script>
+        var seoData = {};
+        var nowGame = { URL: '' };
+        var nextGame = { URL: '' };
+        var gameWindow = {};
+        function setSEO(data) {
+            seoData = data;
+
+            document.getElementsByName('keywords')[0].content = seoData.MetaKeyword;
+            document.getElementsByName('description')[0].content = seoData.MetaDescription;
+        }
+
+        function openGame(game) {
+            nowGame = game;
+            if (nowGame != nextGame) {
+                nextGame = nowGame
+                if (jQuery.isEmptyObject(gameWindow)) {
+                    gameWindow = window.open(nextGame.URL, '_blank');
+                }
+                else {
+                    gameWindow.close();
+                    gameWindow = window.open(nextGame.URL, '_blank');
+                }
+            }
+        }
+
+        //function openGame(game) {
+        //    nowGame = game;
+        //    console.log(game)
+        //    setTimeout(function () {
+        //        openUrl(game);
+        //    }, 500);
+        //}
+
+        //function openUrl(game) {
+        //    if (nowGame != nextGame) {
+        //        nextGame = game;
+        //        if (jQuery.isEmptyObject(gameWindow)) {
+        //            gameWindow = window.open("", "_blank");
+        //            gameWindow.location = nextGame.URL;
+        //            //gameWindow = window.open(nextGame.URL, '_blank');
+        //        }
+        //        else {
+        //            gameWindow.close();
+        //            gameWindow = window.open("", "_blank");
+        //            gameWindow.location = nextGame.URL;
+        //            //gameWindow = window.open(nextGame.URL, '_blank');
+        //        }
+        //    }
+        //}
+
+        // 停用返回上一頁功能
+        window.addEventListener('popstate', function (event) {
+            history.pushState(null, document.title, location.href);
+        });
+    </script>
+</head>
+
+<body class="smoothscroll">
+    <div  ng-class="{'GameUsed': dataSource.inGame}" ng-cloak>
+        <!-- Menu Navbar-->
+        <header id="topNav" class="header">
+            <!-- User Greet -->
+            <!-- !User Greet -->
+            <div class="clearfix"></div>
+            <!-- Top Nav -->
+            <nav class="navbar navbar-default navbar-static">
+                <div class="container">
+                    <div class="navbar-collapse">
+                        <div class="chips_icon ">
+                            <button ng-click="OpenHamburger()" id="HamburgerMenuBtn" type="button"
+                                    class="menu-toggle close_float_nav"
+                                    data-target="#HamburgerModalLong">
+                            </button>
+                        </div>
+                        <div class="logo">
+                            <a href="https://www.hkgplottery.com/GHL.Front/#!/home">
+                                <img src="./content/img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <!-- 桌面板 -->
+                        <ul class="nav navbar-nav">
+                            <li ng-repeat="menuItem in dataSource.menuList" class="dropdown dropdown-large ">
+                               <a href="https://www.hkgplottery.com/#!/home" >
+                                   <span  class="nav_web ">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                    </span>
+                                    
+                                </a>
+                            </li>
+                            <li ng-repeat="menuItem in dataSource.menuList" class="dropdown dropdown-large ">
+                               <a href="https://www.hkgplottery.com/#!/Lobby" >
+                                   
+                                    <span ng-if="menuItem.URL != './#!/home'" class="nav_web  ">
+                                        Lottery Lobby
+                                    </span>
+                                </a>
+                            </li>
+                            <li ng-repeat="menuItem in dataSource.menuList" class="dropdown dropdown-large ">
+                               <a href="https://www.hkgplottery.com/#!/slotLobby" >
+                                   
+                                    <span class="nav_web  ">
+                                        Slot
+                                    </span>
+                                </a>
+                            </li>
+                            <li ng-repeat="menuItem in dataSource.menuList" class="dropdown dropdown-large ">
+                               <a href="#!/promotion" >
+                                   
+                                    <span class="nav_web  ">
+                                        Promotion
+                                    </span>
+                                </a>
+                            </li>
+                            <li ng-repeat="menuItem in dataSource.menuList" class="dropdown dropdown-large ">
+                               <div class="dropdown dropdown-large " ng-if="menuItem.hasDropDown">
+                                    <button class="dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Transaction<i class="fa fa-caret-down ml-5" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <ul>
+                                            <!-- ngRepeat: item in menuItem.DropDownItem --><li ng-repeat="item in menuItem.DropDownItem" >
+                                                <a href="https://www.hkgplottery.com/statementLog" class="">
+                                                    Statement
+                                                </a>
+                                            </li><!-- end ngRepeat: item in menuItem.DropDownItem --><li ng-repeat="item in menuItem.DropDownItem" >
+                                                <a href="https://www.hkgplottery.com/#!/transaction" class="">
+                                                    Transaction
+                                                </a>
+                                            </li><!-- end ngRepeat: item in menuItem.DropDownItem --><li ng-repeat="item in menuItem.DropDownItem" >
+                                                <a href="https://www.hkgplottery.com/#!/betHistory" class="">
+                                                    Bet History
+                                                </a>
+                                            </li><!-- end ngRepeat: item in menuItem.DropDownItem -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li ng-repeat="menuItem in dataSource.menuList" class="dropdown dropdown-large ">
+                               <a href="https://www.hkgplottery.com/referralLog" >
+                                   
+                                    <span  class="nav_web  ">
+                                        Referral
+                                    </span>
+                                </a>
+                              
+                            </li>
+                            <li ng-repeat="menuItem in dataSource.menuList" class="dropdown dropdown-large ">
+                               <a href="https://www.hkgplottery.com/openHistory" >
+                                   
+                                    <span  class="nav_web  ">
+                                        Opening History
+                                    </span>
+                                </a>
+                            </li>
+                            <li ng-repeat="menuItem in dataSource.menuList" class="dropdown dropdown-large ">
+                               <a href="https://www.hkgplottery.com/myPromo" >
+                                   
+                                    <span  class="nav_web  ">
+                                        My Promo
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>   
+                      
+
+                         <!--<ul class="nav navbar-nav" id="NavList">
+                            <li 
+                                class="dropdown dropdown-large">
+                                <a href="{{menuItem.URL}}" >
+                                    <span ng-if="menuItem.URL == './#!/home'" class="nav_web">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                    </span>
+                                    <span ng-if="menuItem.URL != './#!/home'" class="nav_web">
+                                        menuItem.LangKey}}
+                                    </span>
+                                </a>
+                                <div class="dropdown dropdown-large" >
+                                    <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        menuItem.LangKey<i class="fa fa-caret-down ml-5" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <ul>
+                                            <li ng-repeat="item in menuItem.DropDownItem">
+                                                <a href="{{item.URL}}">
+                                                    item.LangKey
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li> 
+                        </ul>-->
+                        <!-- top_menu 有變更 -->
+                        <div class="top_menu"
+                             ng-mouseenter="showMemberCenter(true)">
+                            <ul class="">
+                                <li ng-if="dataSource.loginStatus.Status">
+                                    <a href="https://www.hkgplottery.com/#!/memberManage">
+                                        <i class="circle_white fa fa-user" aria-hidden="true"></i>
+                                        <span class="hidden-sm hidden-xs">MemberCenter</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div ng-if="!dataSource.loginStatus.Status"
+                                 ng-class="!dataSource.loginStatus.Status ? 'login--before' : ''">
+                                <!-- lang -->
+                                <div class="lang hidden-sm hidden-xs">
+                                    <select ng-model="dataSource.languageRead" ng-change="changeLanguage()">
+                                        <option value="en">English</option>
+                                        <option value="id">Indonesian</option>
+                                        <option value="tw">TraditionalChinese</option>
+                                        <option value="cn">SimplifiedChinese</option>
+                                    </select>
+                                </div>
+                                <!-- ###lang -->
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-user circle_white" aria-hidden="true"></i>
+                                        <button class="hidden-xs hidden-sm" data-toggle="modal" data-target="#loginModalLong">
+                                            Login
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a id="showSignUp" ng-click="openSignUp()" class="hidden-xs hidden-sm" data-toggle="modal" data-target="#signupModalLong">
+                                            SignUp
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- ### -->
+                    </div>
+                </div>
+            </nav>
+
+            <!-- 這有換位置 -->
+            <div id="HamburgerMenu" class="dropmenu ">
+                <div class="dropmenu__inner">
+                    <!-- 已登入後才能顯示的功能選單 -->
+                    <div class="mobile_user">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <p >
+                            Hello!
+                            <span class="text-yellow">NickName</span>
+                        </p>
+                        <button data-toggle="modal"
+                                class="yellow_btn"
+                                data-target="#loginModalLong">
+                            Login
+                        </button>
+                        <button 
+                                class="refresh_btn active">
+                            <img src="./content/img/svg/dollar.svg" alt="">
+                            <span>balance</span>
+                            <i class="fa fa-refresh" aria-hidden="true" ng-click="getBalance()"></i>
+                        </button>
+                        <!-- lang -->
+                        <div class="lang mt-10">
+                            <select >
+                                <option value="en">English</option>
+                                <option value="id">Indonesian</option>
+                                <option value="tw">TraditionalChinese</option>
+                                <option value="cn">SimplifiedChinese</option>
+                            </select>
+                        </div>
+                        <!--### lang -->
+                        <button  class="user_link"
+                                data-toggle="modal"
+                                data-target="#signupModalLong">
+                            unregisted?
+                        </button>
+                    </div>
+                    <div class="history_list">
+                        <!-- 這邊是增加的 -->
+                        <div class="drop_level">
+                            <div class="drop_title">
+                                Hello! NickName
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="drop_inner">
+                                <div class="drop_vip">
+                                    <ul>
+                                        <li>VIP</li>
+                                        <li style="display:none">LV&nbsp;8</li>
+                                    </ul>
+                                </div>
+                                <!-- lang -->
+                                <div class="lang ">
+                                    <select >
+                                        <option value="en">English</option>
+                                        <option value="id">Indonesian</option>
+                                        <option value="tw">TraditionalChinese</option>
+                                        <option value="cn">SimplifiedChines</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- ###lang -->
+                        </div>
+                        <div class="clearfix"></div>
+                        <!-- 到這裡## -->
+                        <!-- 手機板 -->
+                        <div class="accordion" id="accordionExample">
+                            <ul class="history__showList">
+                                <li ng-repeat="menuItem in dataSource.menuList" class="hidden-lg hidden-md ">
+                                   <a href="./#!/home" ng-if="!menuItem.hasDropDown" class=" ">
+                                        Main Page
+                                    </a>
+                                </li>
+                                <li ng-repeat="menuItem in dataSource.menuList" class="hidden-lg hidden-md ">
+                                   <a href="./#!/Lobby" ng-if="!menuItem.hasDropDown" class=" ">
+                                        Lottery Lobby
+                                    </a>
+                                </li>
+                                <li ng-repeat="menuItem in dataSource.menuList" class="hidden-lg hidden-md ">
+                                   <a href="#!/slotLobby" ng-if="!menuItem.hasDropDown" class=" ">
+                                        Slot
+                                    </a>
+                                </li>
+                                <li ng-repeat="menuItem in dataSource.menuList" class="hidden-lg hidden-md ">
+                                   <a href="#!/promotion" ng-if="!menuItem.hasDropDown" class=" ">
+                                        Promotion
+                                    </a>
+                                </li>
+                                <li ng-repeat="menuItem in dataSource.menuList" class="hidden-lg hidden-md ">   
+                                    <div class="accordion__item">
+                                       <button  class="collapsed accordion--btn  " data-toggle="collapse" data-target="#collapseOne">
+                                            Transaction
+                                        </button>
+                                       <ul  id="collapseOne" class="accordion__dropdownitem collapse " aria-expanded="true">
+                                            <li >
+                                                <a href="./#!/statementLog" class="">
+                                                    Statement
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a href="./#!/transaction" class="">
+                                                    Transaction
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a href="./#!/betHistory" class="">
+                                                    Bet History
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li ng-repeat="menuItem in dataSource.menuList" class="hidden-lg hidden-md ">
+                                   <a href="#!/referralLog" ng-if="!menuItem.hasDropDown" class=" ">
+                                        Referral
+                                    </a>
+                                    <div class="accordion__item">
+                                    </div>
+                                </li>
+                                <li ng-repeat="menuItem in dataSource.menuList" class="hidden-lg hidden-md ">
+                                   <a href="#!/openHistory" ng-if="!menuItem.hasDropDown" class=" ">
+                                        Opening History
+                                    </a>
+                                    <div class="accordion__item">
+                                    </div>
+                                </li>
+                                <li ng-repeat="menuItem in dataSource.menuList" class="hidden-lg hidden-md ">
+                                   <a href="#!/myPromo" ng-if="!menuItem.hasDropDown" class=" ">
+                                        My Promo
+                                    </a>
+                                    <div class="accordion__item">
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- 這邊有調整位置  跟增加class =" drop_foot"-->
+                            <div class="drop_foot">
+                                <ul>
+                                    <!-- ngIf: dataSource.loginStatus.Status -->
+                                    <!-- ngIf: dataSource.loginStatus.Status -->
+                                </ul>
+                            </div>
+                            <!-- 到這裡 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="dropmenu__close" ng-click="CloseHamburger()"></div>
+            </div>
+            <!--UserInfo -->
+            <div class="mobile_info">
+                <div class="container">
+                    <ul class="" ng-if="dataSource.loginStatus.Status">
+                        <li>
+                            <span>Hello</span>
+                            <span>UserInfo.NickName</span>
+                        </li>
+                        <li>
+                            <div class="balance">
+                                <button class="refresh_btn active text-white" ng-if="dataSource.loginStatus.Status">
+                                    <span>Balance</span>
+                                    <i class=" fa fa-refresh text-green" aria-hidden="true" ng-click="getBalance()"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <!--<li>
+                            <button class="help"><img src="./content/img/svg/question-circle.svg" alt=""></button>
+                        </li>-->
+                    </ul>
+                    <ul class="login--before hidden-lg hidden-md" ng-if="!dataSource.loginStatus.Status">
+                        <li>
+                            <button ng-click="ChangeLoginStyle()"
+                                    data-toggle="modal"
+                                    data-target="#loginModalLong">
+                                    Login
+                            </button>
+                        </li>
+                        <li>
+                            <button ng-click="GetOTP()"
+                                    data-toggle="modal"
+                                    data-target="#signupModalLong">
+                                    SignUp
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--#UserInfo-->
+        </header>
+        <!-- Content -->
+        <div id="wrapper">
+            <section class="main_area">
+                <div class="contact_us" >
+                    <div class="buttonWrapper" ng-click="dataSource.isShowContactUs = !dataSource.isShowContactUs">
+                        <div class="button">
+                            <p>ContactUs</p>
+                            <i ng-if="!dataSource.isShowContactUs" class="fa fa-arrow-up" aria-hidden="true"></i>
+                            <i ng-if="dataSource.isShowContactUs" class="fa fa-arrow-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="box" ng-if="dataSource.isShowContactUs">
+                        <div class="item" ng-if="dataSource.websiteData.Mail" ng-click="openContact('mailto:' + dataSource.websiteData.Mail)">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="item" ng-if="dataSource.websiteData.Skype" ng-click="openContact('skype:' + dataSource.websiteData.Skype + '?chat')">
+                            <img src="./content/img/icon/skype-brands-hover.svg">
+                        </div>
+                        <div class="item" ng-if="dataSource.websiteData.Wechat" ng-click="openContact(dataSource.websiteData.Wechat)">
+                            <img src="./content/img/icon/weixin-brands-hover.svg">
+                        </div>
+                        <div class="item" ng-if="dataSource.websiteData.Facebook" ng-click="openContact('https://www.facebook.com/' + dataSource.websiteData.Facebook)">
+                            <img src="./content/img/icon/facebook-brands-hover.svg">
+                        </div>
+                        <div class="item" ng-if="dataSource.websiteData.Instagram" ng-click="openContact('https://www.instagram.com/' + dataSource.websiteData.Instagram)">
+                            <img src="./content/img/icon/instagram-square-brands_hover.svg">
+                        </div>
+                        <div class="item" ng-if="dataSource.websiteData.Phone" ng-click="openContact('tel:' + dataSource.websiteData.Phone)">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        </div>
+                        <div class="item" ng-if="dataSource.websiteData.Line" ng-click="openContact('http://line.me/ti/p/' + dataSource.websiteData.Line)">
+                            <img src="./content/img/icon/line-brands-hover.svg">
+                        </div>
+                        <div class="item" ng-if="dataSource.websiteData.Twitter" ng-click="openContact('https://twitter.com/' + dataSource.websiteData.Twitter)">           
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </div>
+                        <div class="item" ng-if="dataSource.websiteData.Whatsapp" ng-click="openContact('https://wa.me/' + dataSource.websiteData.Whatsapp)">           
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </div>
+                        <div class="item" ng-if="dataSource.websiteData.Google" ng-click="openContact(dataSource.websiteData.Google)">           
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_area">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!--<ol class="carousel-indicators">
+                        <li ng-repeat="info in dataSource.banner"
+                            class="active"
+                            data-target="#myCarousel"
+                            data-slide-to="{{$index}}">
+                        </li>
+                            <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                            <li class="" data-target="#myCarousel" data-slide-to="1"></li>
+                            <li class="" data-target="#myCarousel" data-slide-to="2"></li>
+                            <li class="" data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>-->
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active"
+                                 style="background-image: url('https://www.hkgplottery.com/GHL.API/Fileupload/UploadDocuments/car2.png')">
+                                
+                                <a href="#!/Lobby" class="item_box">
+                                    <div class="text-center">
+                                        <!--<img data-ng-src="{{banner.frontImg}}" alt="">-->
+                                       <img src="https://www.hkgplottery.com/GHL.API/Fileupload/UploadDocuments/car1.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item "
+                                 style="background-image: url('https://www.hkgplottery.com/GHL.API/Fileupload/UploadDocuments/lotto_bg.png')">
+                                <a href="#!/Lobby" class="item_box">
+                                    <div class="text-center">
+                                        <!--<img data-ng-src="{{banner.frontImg}}" alt="">-->
+                                       <img src="https://www.hkgplottery.com/GHL.API/Fileupload/UploadDocuments/lotto.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item "
+                                 style="background-image: url('https://www.hkgplottery.com/GHL.API/Fileupload/UploadDocuments/sicbo_bg.png')">
+                                <a href="#!/Lobby" class="item_box">
+                                    <div class="text-center">
+                                        <!--<img data-ng-src="{{banner.frontImg}}" alt="">-->
+                                       <img src="https://www.hkgplottery.com/GHL.API/Fileupload/UploadDocuments/sicbo.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item "
+                                 style="background-image: url('https://www.hkgplottery.com/GHL.API/Fileupload/UploadDocuments/slot_bg.png')">
+                                <a href="#!/Lobby" class="item_box">
+                                    <div class="text-center">
+                                        <!--<img data-ng-src="{{banner.frontImg}}" alt="">-->
+                                       <img src="https://www.hkgplottery.com/GHL.API/Fileupload/UploadDocuments/slot.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <!--  從這裡 -->
+                        <button class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <!-- <i class="fa fa-chevron-left" aria-hidden="true"></i> -->
+                            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </button>
+                        <!-- 到這裡### -->
+                    </div>
+                    <div class="bonus_area">
+                        <div class="container">
+                            <div class="bonus_top">
+                                <!-- 這邊的class有調整，要修改 -->
+                                <div class=" col-md-4 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                                    <span class="main_bonus">
+                                        <img src="./content/img/beauty.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 ">
+                                    <!-- 跑馬燈要加在這裡 -->
+                                    <div class="marqee ">
+                                        <div class="marqee_title"> LatestNews</div>
+                                        <ul>
+                                            <li ng-repeat="info in dataSource.bulletin">
+                                                <button data-toggle="modal" data-target="#msgModalLong"
+                                                        ng-click="showBulletin(info)"> {{info.title}}</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- 到這裡 -->
+                                    <div class="bonus_outside">
+                                        <div class="bonus_box">
+                                            <div class="num_group">
+                                                <div class="num_group__img">
+                                                    <img src="./content/img/jackpot/hk-lotto.png" alt="">
+                                                </div>
+            
+                                                <div id="odometer" class="odometer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="container">
+                        <div class="NewLink">
+                            <ul>
+                                <li>
+                                    <a href="#!/Lobby/Racing_Car">
+                                        <p>Lobby_Racing_Car</p>
+                                        <img src="./content/img/quicklink/racing.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!/Lobby/Live_Virtual_Lottery">
+                                        <p>Lobby_Live_Virtual_Lottery</p>
+                                        <img src="./content/img/quicklink/4d.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!/Lobby/Number_Games">
+                                        <p>Lobby_Number_Games</p>
+                                        <img src="./content/img/quicklink/lotto.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!/slotLobby">
+                                        <p>Slot</p>
+                                        <img src="./content/img/quicklink/slot.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="FourDOpening">
+                            <div class="quicklink__title">
+                                <span>Latest4DOpening</span>
+                            </div>
+                            <div class="quicklink owl-FourDOpening owl-carousel owl-them ">
+                                <div class="item" >
+                                    <div class="lobby_gamebox"> 
+                                        <div class="lobby_gametop" >
+                                            <img src="./content/img/fourD/toto_b.png">
+                                        </div>
+                                        <p class="lobby_gameName"> 4D Singapore Toto </p>
+                                        <div class="lobby_gameitem ">
+                                            <p class="lobby_openingTime">
+                                                <span> Draw Date </span><br>
+                                               Sun, 2021/2/7
+                                            </p>
+                                        </div>
+                                        <div class="lobby__inner" >
+                                            <ul class="fourDlobby nopadding" >
+                                                <!-- ngRepeat: num in data.oLotteries[0].ResultList -->
+                                                <li class="fourDlobby__rank">
+                                                    <span id="FourDSingaporeTotoOne">Lobby_1Prize</span>
+                                                    <span id="FourDSingaporeTotoTwo">Lobby_2Prize</span>
+                                                    <span id="FourDSingaporeTotoTree">Lobby_3Prize</span>
+                                                </li>
+                                                <li class="fourDlobby__num">
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDSingaporeTotoNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item">
+                                                        <span id="FourDSingaporeTotoNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item">
+                                                        <span id="FourDSingaporeTotoNumOne"></span>
+                                                    </div>
+                                                </li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" >
+                                    <div class="lobby_gamebox"> 
+                                        <div class="lobby_gametop" >
+                                   
+                                            <img src="./content/img/fourD/pool_b.png" id="data.LotteryTypeID == 17">
+                                       
+                                        </div>
+                                        <p class="lobby_gameName"> 4D Singapore Pools</p>
+                                        <div class="lobby_gameitem ">
+                                            <p class="lobby_openingTime">
+                                                <span> Draw Date</span><br>
+                                               Sun, 2021/2/7
+                                            </p>
+                                        </div>
+                                        <div class="lobby__inner" >
+                                            <ul class="fourDlobby nopadding" >
+                                                <!-- ngRepeat: num in data.oLotteries[0].ResultList -->
+                                                <li class="fourDlobby__rank">
+                                                    <span  id="FourDSingaporePoolsOne">Lobby_1Prize</span>
+                                                    <span   id="FourDSingaporePoolsTwo">Lobby_2Prize</span>
+                                                    <span  id="FourDSingaporePoolsOne">Lobby_3Prize</span>
+                                                </li>
+                                                <li class="fourDlobby__num">
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDSingaporePoolsNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDSingaporePoolsNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDSingaporePoolsNumOne"></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" >
+                                    <div class="lobby_gamebox"> 
+                                        <div class="lobby_gametop" >
+                                          
+                                            <img src="./content/img/fourD/hk_b.png" >
+                                   
+                                        </div>
+                                        <p class="lobby_gameName"> 4D HongKong Pools</p>
+                                        <div class="lobby_gameitem ">
+                                            <p class="lobby_openingTime">
+                                                <span> Draw Date</span><br>
+                                               Sun, 2021/2/7
+                                            </p>
+                                        </div>
+                                        <div class="lobby__inner" >
+                                            <ul class="fourDlobby nopadding" >
+                                                <!-- ngRepeat: num in data.oLotteries[0].ResultList -->
+                                                <li class="fourDlobby__rank">
+                                                    <span  id="FourDHongKongPoolsOne">Lobby_1Prize</span>
+                                                    <span   id="FourDHongKongPoolsTwo">Lobby_2Prize</span>
+                                                    <span  id="FourDHongKongPoolsOne">Lobby_3Prize</span>
+                                                </li>
+                                                <li class="fourDlobby__num">
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDHongKongPoolsNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDHongKongPoolsNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDHongKongPoolsNumOne"></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" >
+                                    <div class="lobby_gamebox"> 
+                                        <div class="lobby_gametop" >
+                                            <img src="./content/img/fourD/SydneyPoolsToday.png" >
+                                       
+                                        </div>
+                                        <p class="lobby_gameName"> 4D Sydney Pools</p>
+                                        <div class="lobby_gameitem ">
+                                            <p class="lobby_openingTime">
+                                                <span> Draw Date</span><br>
+                                               Sun, 2021/2/7
+                                            </p>
+                                        </div>
+                                        <div class="lobby__inner" >
+                                            <ul class="fourDlobby nopadding" >
+                                                <!-- ngRepeat: num in data.oLotteries[0].ResultList -->
+                                                <li class="fourDlobby__rank">
+                                                    <span  id="FourDSydneysPoolsOne">Lobby_1Prize</span>
+                                                    <span   id="FourDSydneysPoolTwo">Lobby_2Prize</span>
+                                                    <span  id="FourDSydneysPoolOne">Lobby_3Prize</span>
+                                                </li>
+                                                <li class="fourDlobby__num">
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDSydneysPoolNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDSydneysPoolNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDSydneysPoolNumOne"></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" >
+                                    <div class="lobby_gamebox"> 
+                                        <div class="lobby_gametop" >
+                                            <img src="./content/img/fourD/4DShanghai_b.png" >
+                                  
+                                        </div>
+                                        <p class="lobby_gameName"> 4D ShangHai Hero</p>
+                                        <div class="lobby_gameitem ">
+                                            <p class="lobby_openingTime">
+                                                <span> Draw Date</span><br>
+                                               Sun, 2021/2/7
+                                            </p>
+                                        </div>
+                                        <div class="lobby__inner" >
+                                            <ul class="fourDlobby nopadding" >
+                                                <!-- ngRepeat: num in data.oLotteries[0].ResultList -->
+                                                <li class="fourDlobby__rank">
+                                                    <span  id="FourDShangHaiHeroPoolsOne">Lobby_1Prize</span>
+                                                    <span   id="FourDShangHaiHeroPoolTwo">Lobby_2Prize</span>
+                                                    <span  id="FourDShangHaiHerosPoolOne">Lobby_3Prize</span>
+                                                </li>
+                                                <li class="fourDlobby__num">
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDShangHaiHerosPoolNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDShangHaiHerosPoolNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDShangHaiHerosPoolNumOne"></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" >
+                                    <div class="lobby_gamebox"> 
+                                        <div class="lobby_gametop" >
+                                            <img src="./content/img/fourD/HKGrand_b.png" >
+                                          
+                                        </div>
+                                        <p class="lobby_gameName"> 4D HongKong Grand</p>
+                                        <div class="lobby_gameitem ">
+                                            <p class="lobby_openingTime">
+                                                <span> Draw Date</span><br>
+                                               Sun, 2021/2/7
+                                            </p>
+                                        </div>
+                                        <div class="lobby__inner" >
+                                            <ul class="fourDlobby nopadding" >
+                                                <!-- ngRepeat: num in data.oLotteries[0].ResultList -->
+                                                <li class="fourDlobby__rank">
+                                                    <span  id="FourDHongKongGrandPoolsOne">Lobby_1Prize</span>
+                                                    <span  id="FourDHongKongGrandPoolTwo">Lobby_2Prize</span>
+                                                    <span  id="FourDHongKongGrandPoolOne">Lobby_3Prize</span>
+                                                </li>
+                                                <li class="fourDlobby__num">
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDHongKongGrandPoolNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDHongKongGrandPoolNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDHongKongGrandPoolNumOne"></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" >
+                                    <div class="lobby_gamebox"> 
+                                        <div class="lobby_gametop" >
+                                            <img src="./content/img/fourD/amazon_b.png" >
+                                            
+                                        </div>
+                                        <p class="lobby_gameName"> 4D Amazon</p>
+                                        <div class="lobby_gameitem ">
+                                            <p class="lobby_openingTime">
+                                                <span> Draw Date</span><br>
+                                               Sun, 2021/2/7
+                                            </p>
+                                        </div>
+                                        <div class="lobby__inner" >
+                                            <ul class="fourDlobby nopadding" >
+                                                <!-- ngRepeat: num in data.oLotteries[0].ResultList -->
+                                                <li class="fourDlobby__rank">
+                                                    <span  id="FourDAmazonOne">Lobby_1Prize</span>
+                                                    <span  id="FourDAmazonTwo">Lobby_2Prize</span>
+                                                    <span  id="FourDAmazonOne">Lobby_3Prize</span>
+                                                </li>
+                                                <li class="fourDlobby__num">
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDAmazoNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDAmazoNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDAmazoNumOne"></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" >
+                                    <div class="lobby_gamebox"> 
+                                        <div class="lobby_gametop" >
+                                            <img src="./content/img/fourD/king4D_b.png" >
+                                           
+                                        </div>
+                                        <p class="lobby_gameName"> 4D King</p>
+                                        <div class="lobby_gameitem ">
+                                            <p class="lobby_openingTime">
+                                                <span> Draw Date</span><br>
+                                               Sun, 2021/2/7
+                                            </p>
+                                        </div>
+                                        <div class="lobby__inner" >
+                                            <ul class="fourDlobby nopadding" >
+                                                <!-- ngRepeat: num in data.oLotteries[0].ResultList -->
+                                                <li class="fourDlobby__rank">
+                                                    <span  id="FourDKingOne">Lobby_1Prize</span>
+                                                    <span  id="FourDKingTwo">Lobby_2Prize</span>
+                                                    <span  id="FourDKingOne">Lobby_3Prize</span>
+                                                </li>
+                                                <li class="fourDlobby__num">
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDKingNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDKingNumOne"></span>
+                                                    </div>
+                                                    <div class="fourDlobby__item" >
+                                                        <span id="FourDKingNumOne"></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="winner_area">
+                            <div class="winner_title">Lobby_WinnerList</div>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <button href="#home" aria-controls="home" role="tab" data-toggle="tab">Lobby_Today</button>
+                                </li>
+                                <li role="presentation">
+                                    <button href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Lobby_Yesterday</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <div class="col-md-6">
+                                        <ul class="win_list">
+                                            <li>
+                                                <ul class="win_item">
+                                                    <li class="col-xs-1"> <img src="./content/img/icon/wincup_1.png"> </li>
+                                                    <li class="col-xs-2"> 1st</li>
+                                                    <li class="col-xs-3"> jgijgigjigj</li>
+                                                    <li class="col-xs-3"> Sicbo</li>
+                                                    <li class="col-xs-3">$1200</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="win_item">
+                                                    <li class="col-xs-1"> <img src="./content/img/icon/wincup_2.png"> </li>
+                                                    <li class="col-xs-2"> 1st</li>
+                                                    <li class="col-xs-3"> jgijgigjigj</li>
+                                                    <li class="col-xs-3"> Sicbo</li>
+                                                    <li class="col-xs-3">$1200</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="win_item">
+                                                    <li class="col-xs-1"> <img src="./content/img/icon/wincup_3.png"> </li>
+                                                    <li class="col-xs-2"> 1st</li>
+                                                    <li class="col-xs-3"> jgijgigjigj</li>
+                                                    <li class="col-xs-3"> Sicbo</li>
+                                                    <li class="col-xs-3">$1200</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="win_item">
+                                                    <li class="col-xs-1"> </li>
+                                                    <li class="col-xs-2"> 1st</li>
+                                                    <li class="col-xs-3"> jgijgigjigj</li>
+                                                    <li class="col-xs-3"> Sicbo</li>
+                                                    <li class="col-xs-3">$1200</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="win_item">
+                                                    <li class="col-xs-1"> </li>
+                                                    <li class="col-xs-2"> 1st</li>
+                                                    <li class="col-xs-3"> jgijgigjigj</li>
+                                                    <li class="col-xs-3"> Sicbo</li>
+                                                    <li class="col-xs-3">$1200</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="win_list">
+                                            <li>
+                                                <ul class="win_item">
+                                                    <li class="col-xs-1"> </li>
+                                                    <li class="col-xs-2"> 1st</li>
+                                                    <li class="col-xs-3"> jgijgigjigj</li>
+                                                    <li class="col-xs-3"> Sicbo</li>
+                                                    <li class="col-xs-3">$1200</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="win_item">
+                                                    <li class="col-xs-1"> </li>
+                                                    <li class="col-xs-2"> 1st</li>
+                                                    <li class="col-xs-3"> jgijgigjigj</li>
+                                                    <li class="col-xs-3"> Sicbo</li>
+                                                    <li class="col-xs-3">$1200</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="win_item">
+                                                    <li class="col-xs-1"></li>
+                                                    <li class="col-xs-2"> 1st</li>
+                                                    <li class="col-xs-3"> jgijgigjigj</li>
+                                                    <li class="col-xs-3"> Sicbo</li>
+                                                    <li class="col-xs-3">$1200</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="win_item">
+                                                    <li class="col-xs-1"> </li>
+                                                    <li class="col-xs-2"> 1st</li>
+                                                    <li class="col-xs-3"> jgijgigjigj</li>
+                                                    <li class="col-xs-3"> Sicbo</li>
+                                                    <li class="col-xs-3">$1200</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="win_item">
+                                                    <li class="col-xs-1"> </li>
+                                                    <li class="col-xs-2"> 1st</li>
+                                                    <li class="col-xs-3"> jgijgigjigj</li>
+                                                    <li class="col-xs-3"> Sicbo</li>
+                                                    <li class="col-xs-3">$1200</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+            
+                    <div class="container">
+                        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                            <div class="bottom_icons">
+                                <img src="./content/img/396icon/footer_1.png" alt=""><br>
+                                <img src="./content/img/396icon/footer_2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="socialIcon">
+                                <ul ng-if="dataSource.showContact">
+                                    <li ng-click="openContact('https://www.instagram.com/' + dataSource.websiteData.Instagram)">
+                                        <p class="socialIcon__default"><img src="./content/img/icon/instagram-square-brands.svg"></p>
+                                        <p class="socialIcon__hover"><img src="./content/img/icon/instagram-square-brands_hover.svg"></p>
+                                    </li>
+                                    <li ng-click="openContact('http://line.me/ti/p/' + dataSource.websiteData.Line)">
+                                        <p class="socialIcon__default"><img src="./content/img/icon/line-brands.svg"></p>
+                                        <p class="socialIcon__hover"><img src="./content/img/icon/line-brands-hover.svg"></p>
+                                    </li>
+                                    <li ng-click="openContact('skype:' + dataSource.websiteData.Skype + '?chat')">
+                                        <p class="socialIcon__default"><img src="./content/img/icon/skype-brands.svg"></p>
+                                        <p class="socialIcon__hover"><img src="./content/img/icon/skype-brands-hover.svg"></p>
+                                    </li>
+                                    <li ng-click="openContact(dataSource.websiteData.Wechat)">
+                                        <p class="socialIcon__default"><img src="./content/img/icon/weixin-brands.svg"></p>
+                                        <p class="socialIcon__hover"><img src="./content/img/icon/weixin-brands-hover.svg"></p>
+                                    </li>
+                                    <li ng-click="openContact('https://www.facebook.com/' + dataSource.websiteData.Facebook)">
+                                        <p class="socialIcon__default"><img src="./content/img/icon/facebook-brands.svg"></p>
+                                        <p class="socialIcon__hover"><img src="./content/img/icon/facebook-brands-hover.svg"></p>
+                                    </li>
+                                    <!--<li ng-click="openContact('fb://page/' + dataSource.websiteData.Facebook)">
+                    <p class="socialIcon__default"><img src="./content/img/icon/facebook-brands.svg"></p>
+                    <p class="socialIcon__hover"><img src="./content/img/icon/facebook-brands-hover.svg"></p>
+                </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="copyright">
+                            <p>{{dataSource.websiteData.FooterText}}</p>
+                            <!--<p>'Lobby_Pengantar_Detail' | translate }}</p>-->
+                            <p>Lobby_Copyright<br>Lobby_Copyright_Detail</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ./Content -->
+        <!--訊息框套用-->
+        <!-- Modal -->
+        <button id="ModalShow" class="btn btn-primary btn-block" data-toggle="modal" data-target="#msgModalLong"
+                style="display: none;"></button>
+        <div class="modal fade" id="msgModalLong" tabindex="-1" role="dialog" aria-labelledby="msgModalLongTitle"
+             aria-hidden="true" ng-click="modalMsgConfirmEvent(false)">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">{{dataSource.modalMsg.title | translate}}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-12">
+                            <small ng-bind-html="dataSource.modalMsg.msg | translate : dataSource.modalMsg.params"
+                                   id="fileHelp" class="form-text  mb-10 clearfix">
+                            </small>
+                        </div>
+                        <div ng-if="dataSource.modalMsg.title === 'BetLimit'">
+                            <Br><small>Limit_MinBet: {{dataSource.modalMsg.params.infoLimitMin | currency : '' : 0}}</small>
+                            <Br><small>Limit_MaxBet: {{dataSource.modalMsg.params.infoLimitMax | currency : '' : 0}}</small>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button ng-click="modalMsgConfirmEvent(true);" type="button" class="btn theme_btn"
+                                data-dismiss="modal">
+                            Confirm
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div ng-include="'./app/Views/betHistory.html'" class="bet-history-modal" ng-repeat="isModal in [true]">
+        </div>
+
+        <div class="modal fade sign_area" id="loginModalLong" tabindex="-1" role="dialog"
+             aria-labelledby="loginModalLongTitle" aria-hidden="true" ng-click="modalMsgConfirmEvent(false)">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="loginForm">
+                            <ul>
+                                <li>
+                                    <label for="UserName">Lobby_UserName: </label>
+                                    <input id="UserName" name="userName" type="text" ng-model="dataSource.userDataObj.UserName" required>
+                                </li>
+                                <li class="eye">
+                                    <label for="Pwd">Lobby_Password: </label>
+                                    <input ng-model="dataSource.userDataObj.Pwd" name="Pwd" id="Pwd" type="password" required>
+                                    <i ng-if="dataSource.isShowPwd" ng-click="showEyeEvent()" class="fa fa-eye" aria-hidden="true"></i>
+                                    <i ng-if="!dataSource.isShowPwd" ng-click="showEyeEvent()" class="fa fa-eye-slash"
+                                       aria-hidden="true"></i>
+                                </li>
+                                <!--<li>
+                                    <label for="ValidationCode" class="left">Validation Code: </label>
+                                    <input ng-model="dataSource.validObj.InputCode" name="ValidationCode" autocomplete="off"
+                                           id="ValidationCode" type="text" placeholder="'Lobby_ValidationCode' | translate }}" required>
+                                    <img class="mt-10" data-ng-src="data:image/png;base64,{{dataSource.validObj.ValidatorCodeImg}}"
+                                         ng-click="genValidatorCode()" style="position:initial" />
+                                </li>-->
+                            </ul>
+                            <button ng-click="Login(loginForm)" class="theme_btn btn mr-10" data-dismiss="modal">
+                                Login
+                            </button>
+                            <!--<button ng-click="changePageStatus('signUpView')" class="theme_btn btn">
+                                New User
+                            </button>-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade sign_area" id="signupModalLong" tabindex="-1" role="dialog"
+             aria-labelledby="signupModalLongTitle" aria-hidden="true" ng-click="modalMsgConfirmEvent(false)">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">SignUp</h5>
+                        <button id="closeModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="form" class="form-horizontal" role="form">
+                            <ul>
+                                <li class="col-md-6 col-sm-6 col-xs-12">
+                                    <label for="userName">Lobby_UserName: </label>
+                                    <input type="text" name="userName" ng-model="dataSource.signObj.UserName" ng-class="(form.userName.$touched || dataSource.clickRegister) && form.userName.$invalid ? 'false_box' : ''"
+                                           ng-blur="checkRegisterData('UserName')" required>
+                                    <span class="text-red">onfirmMsg.UserName</span>
+                                </li>
+                                <li class="col-md-6 col-sm-6  col-xs-12">
+                                    <label for="nickName">Lobby_NickName</label>
+                                    <input type="text" name="nickName" ng-model="dataSource.signObj.NickName" ng-class="(form.nickName.$touched || dataSource.clickRegister) && form.nickName.$invalid ? 'false_box' : ''"
+                                           ng-blur="checkRegisterData('NickName')" required>
+                                    <span class="text-red">ConfirmMsg.NickName</span>
+                                </li>
+                                <li class="col-md-12 col-sm-12 col-xs-12">
+                                    <label for="fullName">Lobby_FullName</label>
+                                    <input type="text" name="fullName" ng-model="dataSource.signObj.FullName" ng-class="(form.fullName.$touched || dataSource.clickRegister) && form.fullName.$invalid ? 'false_box' : ''" required>
+                                    <span>ConfirmMsg.FullName ? dataSource.ConfirmMsg.FullName : Lobby_FullName_Detail</span>
+                                </li>
+                                <li class="col-md-12 col-sm-12 col-xs-12">
+                                    <label for="email">Lobby_Email: </label>
+                                    <input type="text" name="email" ng-model="dataSource.signObj.Email" ng-class="(form.email.$touched || dataSource.clickRegister) && form.email.$invalid ? 'false_box' : ''"
+                                           ng-blur="checkRegisterData('Email')" my-validator="email">
+                                    <span class="text-red">ConfirmMsg.Email</span>
+                                </li>
+                                <li class="eye col-md-12 col-sm-12 col-xs-12">
+                                    <label for="phone">Lobby_MobileNumber: </label>
+                                    <input type="text" name="phone" ng-model="dataSource.signObj.Phone" ng-class="(form.phone.$touched || dataSource.clickRegister) && form.phone.$invalid ? 'false_box' : ''"
+                                           ng-blur="checkRegisterData('Phone')" required allow-numbers-only>
+                                    <span class="text-red">ConfirmMsg.Phone</span>
+                                </li>
+                                <li class="eye col-md-6 col-sm-6 col-xs-12">
+                                    <label for="pwd">Lobby_LoginPassword: </label>
+                                    <input ng-model="dataSource.signObj.Pwd" type="text" name="pwd" my-validator="password" ng-class="(form.pwd.$touched || dataSource.clickRegister) && form.pwd.$invalid ? 'false_box' : ''">
+                                </li>
+                                <li class="eye col-md-6 col-sm-6 col-xs-12">
+                                    <label for="confirmPwd">Lobby_RepeatLoginPassword: </label>
+                                    <input type="text" name="confirmPwd" ng-model="dataSource.signObj.ConfirmPwd" ng-class="(form.confirmPwd.$touched || dataSource.clickRegister) && form.confirmPwd.$invalid ? 'false_box' : ''" required>
+                                    <span>ConfirmMsg.Pwd</span>
+                                </li>
+                                <!--<li class="eye col-md-6 col-sm-6 col-xs-12">
+                                    <label for="moneyPwd">Withdrawal Password: </label>
+                                    <input type="text" name="moneyPwd" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-model="dataSource.signObj.MoneyPwd" my-validator="numeric" required>
+                                </li>
+                                <li class="eye col-md-6 col-sm-6 col-xs-12">
+                                    <label for="confirmMoneyPwd">Repeat Withdrawal Password: </label>
+                                    <input type="text" name="confirmMoneyPwd" ng-model="dataSource.signObj.ConfirmMoneyPwd" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                                           my-validator="numeric" required>
+                                    <span>{{dataSource.ConfirmMsg.MoneyPwd}}</span>
+                                </li>-->
+                                <li class="col-md-12 col-sm-12 col-xs-12">
+                                    <label for="referralCode">Lobby_ReferralCode</label>
+                                    <input ng-model="dataSource.signObj.ReferralMap" type="text" name="referralCode">
+                                </li>
+                                <li class="col-md-6 col-sm-6 col-xs-12">
+                                    <label for="ValidationCode" class="left">Lobby_ValidationCode: </label>
+                                    <input ng-model="dataSource.validObj.InputCode" name="ValidationCode" type="text" ng-class="(form.ValidationCode.$touched || dataSource.clickRegister) && form.ValidationCode.$invalid ? 'false_box' : ''"
+                                           placeholder="'Lobby_ValidationCode' | translate }}" required>
+                                </li>
+                                <li class="col-md-6 col-sm-6 col-xs-12 pt-10">
+                                    <img data-ng-src="data:image/png;base64,{{dataSource.validObj.ValidatorCodeImg}}"
+                                         ng-click="genValidatorCode()" style="position:initial" />
+                                </li>
+                            </ul>
+                            <div class="col-md-12 col-xs-12 text-center nopadding mt-10 mb-10">
+                                <button ng-click="register(form)" class="theme_btn btn" style="display:inline;margin:0 auto;">
+                                    Submit
+                                </button>
+                                <button class="theme_btn2 btn" data-dismiss="modal" style="display:inline;margin:0 10px 0 0;">
+                                    Cancel
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--遊戲規則-->
+        <!-- <button id="GameRuleShow" class="btn btn-primary btn-block" data-toggle="modal" data-target="#DiceGameRuleLong"
+        style="display: none;"></button> -->
+       
+        <!-- <button class="gameMainNav--closelobby" ng-if="dataSource.isOpenGameLobbyNav" ng-click="closeGameLobbyNav()"></button> -->
+        <!-- 開獎走勢 -->
+        <!-- <trendbox trend-data="dataSource.TrendboxData"></trendbox> -->
+        <!-- #開獎走勢 -->
+        <button id="MemberResult" class="btn btn-primary btn-block" data-toggle="modal" data-target="#memberResultLong"
+                style="display: none;"></button>
+        <!-- <signalrbox signalr-data="dataSource.SignalrData"></signalrbox> -->
+    </div>
+    
+
+    <script>
+         var HamburgerMenuBtn = document.getElementById('HamburgerMenuBtn');
+            HamburgerMenuBtn.addEventListener("click", function(){
+                $('#HamburgerMenuBtn').toggleClass('is-active');
+                $('#HamburgerMenu').toggleClass('open');
+            });
+
+        var CloseHamburger = document.querySelector('.dropmenu__close');
+            CloseHamburger.addEventListener("click", function(){
+                $('#HamburgerMenuBtn').removeClass('is-active');
+                $('#HamburgerMenu').removeClass('open');
+            });
+
+
+        document.querySelector('.buttonWrapper').addEventListener("click", function(){
+            if ($('.contact_us').hasClass('open')){
+                $('.contact_us').removeClass('open');
+            }
+            else {
+                $('.contact_us').addClass('open');
+            }
+        });
+        var owl = $('.owl-carousel');
+        if (owl.length > 0) {
+            owl.owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: false,
+                dots: true,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    }
+                }
+            });
+        };
+
+        function menuSetting(){
+            var menuList =  [
+                //{ Text: "Notifications", URL: "#/history" },
+                {
+                    Text: '首頁',
+                    Icon:'fa fa-home',
+                    LangKey: 'MainPage',
+                    URL: "https://www.hkgplottery.com/GHL.Front/#!/home",
+                },
+                //{
+                //    Text: '遊戲大廳',
+                //    LangKey: 'GameLobby',
+                //    URL: "./#!/GameRoom",
+                //},
+                {
+                    Text: "彩票大廳",
+                    LangKey: 'LotteryLobby',
+                    URL: "https://www.hkgplottery.com/GHL.Front/#!/Lobby",
+                },
+                {
+                    Text: "老虎機",
+                    LangKey: 'Slot',
+                    URL: "#!/slotLobby",
+                },
+                {
+                    Text: "活動",
+                    LangKey: 'Promotion',
+                    URL: "#!/promotion",
+                },
+                {
+                    Text: "交易",
+                    LangKey: 'Transaction',
+                    URL: "#!/transaction",
+                    DropDownItem: [
+                        { Text: '投注報表', LangKey: 'Statement', URL: "./#!/statementLog" },
+                        { Text: '交易', LangKey: 'Transaction', URL: "./#!/transaction" },
+                        { Text: '投注歷史', LangKey: 'BetHistory', URL: "./#!/betHistory" }
+                    ],
+                    hasDropDown: true,
+                },
+                {
+                    Text: "介紹費",
+                    LangKey: 'Referral',
+                    URL: "#!/referralLog",
+                },
+                {
+                    Text: "開獎歷史",
+                    LangKey: 'OpenHistory',
+                    URL: "https://www.hkgplottery.com/GHL.Front/#!/openHistory",
+                },
+                {
+                    Text: "目前活動",
+                    LangKey: 'MyPromo',
+                    URL: "https://www.hkgplottery.com/GHL.Front/#!/myPromo",
+                }
+            ];
+     
+
+        
+        var NavListHTML = document.querySelector('#MenuNav').innerHTML;
+        var newNav = '';
+        for (var i = 0; i <  menuList.length ; i++){
+            newNav += NavListHTML.replace('#menuUrl#', menuList[i].URL).replace('#menuItemLangKey#', menuList[i].LangKey).replace('#menuItemIcon', menuList[i].Icon);
+           
+            if(menuList[i].DropDownItem && menuList[i].DropDownItem.length > 0){
+                let dropDownMenuHTML = document.querySelector('#DropDownMenu').innerHTML;
+                let subMenuList = '';
+                for(var j=0;j<menuList[i].DropDownItem.length;j++){
+                    let dropDownListHTML = document.querySelector('#DropDownList').innerHTML;
+                   
+                    subMenuList += dropDownListHTML.replace('#subMenuURL#', menuList[i].DropDownItem[j].URL).replace('#subMenuItemLangKey#', menuList[i].LangKey);
+                }
+                dropDownMenuHTML = dropDownMenuHTML.replace('#DropDownList#', subMenuList);
+                newNav = newNav.replace('#DropDownMenu#', dropDownMenuHTML);
+            }
+            if (menuList[i].Icon > 0){
+                menuList[i].Text == -1;
+            }
+        }
+        console.log(newNav)
+        
+        $('#NavList').html(newNav);
+        // NavList.appendChild();
+        }
+        $(function(){
+            menuSetting();
+        });
+    </script>
+
+    <template id="MenuNav">
+        <li class="dropdown dropdown-large">
+            <a href="#menuUrl#" >
+                <span class="nav_web">
+                    <i class="#menuItemIcon"aria-hidden="true"></i>
+                </span>
+                <span class="nav_web">
+                    #menuItemLangKey#
+                </span>
+            </a>
+            <span style="opacity: 0;">#DropDownMenu#</span> 
+        </li> 
+    </template>
+
+    <template id="DropDownMenu">
+        <div class="dropdown dropdown-large" >
+            <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                menuItem.LangKey<i class="fa fa-caret-down ml-5" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <ul>
+                    #DropDownList#
+                </ul>
+            </div>
+        </div>
+    </template>
+
+    <template id="DropDownList">
+        <li ng-repeat="item in menuItem.DropDownItem">
+            <a href="#subMenuURL#">
+                #subMenuItemLangKey#
+            </a>
+        </li>
+    </template>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    margin: 0px;
+    /*overflow: hidden;*/
+}
+
+.video_used {
+    /* content:url('img/volume-mute-solid.svg'); */
+    /* background-image: url(''); */
+    /* background-color:#fff; */
+    /* background-size: cover; */
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    right: 20px;
+    bottom: 30px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: transparent;
+    border: 0px;
+}
+
+    .video_used img {
+        width: 100%;
+    }
+
+    .video_used:hover,
+    .video_used:active,
+    .video_used:focus {
+        cursor: pointer;
+        border: 0px;
+        box-shadow: 0 0 0;
+        outline: none;
+        opacity: 1;
+        transition: all .3s ease-in;
+    }
+
+@media (max-width: 767px) {
+    .video_used {
+        right: 10px;
+    }
+
+        .video_used img {
+            width: 25px;
+        }
+}

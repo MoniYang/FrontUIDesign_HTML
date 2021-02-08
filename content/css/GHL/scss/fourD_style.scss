@@ -1,0 +1,1962 @@
+@include rwdw(991) {
+  .embed-container {
+    &.game4d_color {
+      overflow-x: hidden;
+      overflow-y: visible;
+    }
+  }
+}
+
+.gamd4Dcontainer{
+  @include rwdw(991){
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+      width:0px;
+    }
+  }
+}
+.text-fourDID{
+  .magnumYellow & {
+    color:$magnumYellow;
+  }
+  .dirwanBlue & {
+    color:$dirwanBlue;
+  }
+  .totoRed & {
+    color:#f86868;
+  }
+  .sandakanColor & {
+    color:#06c71d;
+  }
+  .SydneyOrange & {
+    color:$SydneyOrange;
+  }
+  .poolsBlue & {
+    color:$poolsBlue;
+  }
+}
+.game4dList {
+  &__CurrentTime{
+    display: flex;
+    flex-direction: row!important;
+    justify-content: space-between;
+    background-color:#1d1d1d;
+    li{
+      p{
+        border-right:1px solid $white;
+      }
+      &:last-child{
+        p{
+          border-right:0px;
+        }
+      }
+      &:nth-child(odd),
+      &:nth-child(even){
+        background-color:transparent!important;
+      }
+    }
+  }
+  &__Current{
+    li{
+      display:flex;
+      flex-direction: column!important;
+    }
+  }
+  .carousel-control.right,
+  .carousel-control.left {
+    top: 0px;
+  }
+  .carousel-inner {
+    @include rwdw(991) {
+      overflow: visible;
+    }
+
+  }
+  .carousel {
+    .item {
+      height: auto;
+      width: 100%;
+      max-height: auto;
+    }
+  }
+  .nav-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 0px;
+    li {
+      width: 19%;
+      padding: 5px;
+      margin: 0 1px;
+      text-align: center;
+      background-color: #505050 !important;
+
+      &.active {
+        background-color: $yellow !important;
+
+        button {
+          color: $black;
+        }
+      }
+      button {
+        font-size: font(1);
+        color: $white;
+        text-transform: capitalize;
+      }
+
+      &:nth-child(odd),
+      &:nth-child(even) {
+        background-color: transparent;
+      }
+    }
+  }
+  &.inVideo {
+    padding: 20px 0;
+    // background-color:rgba(0, 0, 0, 0.68);
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include rwdw(480) {
+      padding: 5px 0;
+    }
+  }
+  ul {
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+  }
+  li {
+    padding: 5px 0;
+    text-transform: capitalize;
+    @include rwdw(480) {
+      padding: 3px 0;
+    }
+    &:nth-child(even) {
+      background: #404040;
+    }
+    &:nth-child(odd) {
+      background: #2a2a2a;
+    }
+  }
+  &.fourDID_color {
+    min-height:280px;
+    max-height:280px;
+    overflow-y: auto;
+    @include rwdw(1199){
+      max-height:220px;
+    }
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+    @include rwdw(991) {
+      max-height: 100%;
+      overflow: visible;
+    }
+    @include rwdw(320){
+      max-height:54vh;
+      overflow-y: auto;
+    }
+    .item {
+      ul {
+        display: flex;
+        &.game4dfirstline {
+          flex-direction: row !important;
+        }
+        li {
+          flex-direction: row !important;
+          // color: $fourDID_theme;
+          justify-content: space-around;
+          padding:4px;
+          &.gamePrizeNum_s {
+            ul {
+              flex-direction: row !important;
+              flex-wrap: wrap !important;
+              width:100%;
+              justify-content: flex-start!important;
+            }
+          }
+        }
+      }
+    }
+    ul {
+      flex-wrap: nowrap;
+      flex-direction: column ;
+      li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        @include rwdw(991) {
+          flex-direction: row ;
+          justify-content: center;
+        }
+        &.gamePrizeNum {
+          ul {
+            flex-direction: row !important;
+          }
+        }
+        &.gamePrizeNum_s {
+          ul {
+            flex-direction: row !important;
+            justify-content: space-around !important;
+            flex-wrap: wrap;
+            width: 100%;
+            li {
+              flex-direction: row !important;
+              flex-wrap: wrap !important;
+              width: 20% !important;
+              padding:4px;
+            }
+          }
+        }
+        ul {
+          &.game4dfirstline {
+            @include rwdw(991) {
+              flex-direction: row !important;
+            }
+            li {
+              // color: $fourDID_theme;
+              .magnumYellow & {
+                color: $magnumYellow;
+              }
+              .dirwanBlue & {
+                color: $dirwanBlue;
+              }
+              .totoRed & {
+                color: $totoRed;
+              }
+              .sandakanColor & {
+                color: $sandakanColor;
+              }
+            }
+          }
+        }
+      }
+    }
+    // color:$fourDID_theme!important;
+    li {
+      padding: 8px 0;
+      text-align: center;
+      height: auto;
+      p {
+        margin-bottom: 0px;
+        .magnumYellow & {
+          &.text-fourDID {
+            color: $magnumYellow;
+          }
+        }
+      }
+      // color:$fourDID_theme!important;
+    }
+  }
+  &.rightpart {
+    li {
+      padding: 8px 15px;
+      text-align: left;
+      &:last-child,
+      &:nth-child(2) {
+        // padding: 20px 15px;
+      }
+    }
+    &.fourDID_color {
+      li {
+        @include rwdw(991) {
+          &:nth-child(2){
+            flex-direction: column ;
+            align-items: center;
+          }
+          &:nth-child(3){
+            flex-direction: row;
+            p{
+              text-align: center;
+            }
+          }
+          &:last-child{
+            flex-direction: row;
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+.discount{
+  &__item {
+    display: flex !important;
+    // flex-direction: row !important;
+    justify-content: space-around;
+    @include rwdw(991){
+      width:100%;
+    }
+    li {
+      text-align: left !important;
+      padding: 8px 0px !important;
+      flex-direction: row!important;
+      @include rwdw(991){
+        p{
+          text-align:center;
+        }
+      }
+      &:nth-child(2) {
+        padding-left: 8px;
+      }
+  
+      &:nth-child(odd),
+      &:nth-child(even) {
+        background-color: transparent;
+      }
+    }
+  }
+  &__prize{
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: space-between;
+  }
+}
+
+
+.game4dfirstline {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row !important;
+   li{
+     .totoRed & {
+       color: $totoRed;
+     }
+     .dirwanBlue & {
+       color: $dirwanBlue;
+     }
+     .magnumYellow & {
+      color: $magnumYellow;
+     }
+     .sandakanColor &{
+      color: $sandakanColor;
+     }
+     .poolsBlue &{
+      color: $poolsBlue;
+     }
+   }
+  // &.totoRed {
+  //   li {
+  //     color: $totoRed;
+  //   }
+  // }
+
+  // &.dirwanBlue {
+  //   li {
+  //     color: $dirwanBlue;
+  //   }
+  // }
+
+  // &.magnumYellow {
+  //   li {
+  //     color: $magnumYellow;
+  //   }
+  // }
+
+  // &.sandakanColor {
+  //   li {
+  //     color: $sandakanColor;
+  //   }
+  // }
+
+  // &.damacaiColor {
+  //   li {
+  //     color: $damacaiBlue;
+  //   }
+  // }
+
+  // &.cashColor {
+  //   li {
+  //     color: $cashGreen;
+  //   }
+  // }
+
+  // &.poolsBlue {
+  //   li {
+  //     color: $poolsBlue;
+  //   }
+  // }
+
+  li {
+    margin: 0 auto;
+    color: $light_yellow;
+    background-color: transparent !important;
+
+    @include rwdw(991) {
+      span {
+        color: $white;
+      }
+    }
+
+    @include rwdw(480) {
+      font-size: font(1);
+    }
+  }
+}
+
+.game4dOddsItem {
+
+  ul {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+  }
+
+  li {
+    height: 40px;
+    background-color: transparent !important;
+    text-align: center;
+    color: $white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #404040;
+
+    &:last-child {
+      border-right: 0px;
+    }
+
+    @include rwdw(480) {
+      height: auto !important;
+    }
+
+
+  }
+}
+
+.game4dOddsWin {
+  @extend .game4dOddsItem;
+
+  ul {
+    justify-content: center;
+
+    li {
+      height: 60px;
+      align-items: center;
+    }
+  }
+}
+
+.game4dtext {
+  p {
+    text-align: center;
+    color: $white;
+    padding: 5px 0 !important;
+    margin-bottom: 0px;
+  }
+}
+
+.gamePrizeNum {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    li {
+      font-size: font(1.5);
+      color: $white;
+      background-color: transparent !important;
+
+      @include rwdw(480) {
+        font-size: font(1.2);
+      }
+    }
+  }
+}
+
+.gamePrizeNum_s {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  li {
+    width: 20%;
+    height: 25px;
+    color: $silver;
+    text-align: center;
+    background-color: transparent !important;
+
+    @include rwdw(480) {
+      font-size: font(1);
+    }
+
+  }
+}
+
+.game4dSecondLine {
+  display: block !important;
+  width: 100%;
+  float: left;
+
+}
+
+
+
+.game4dcat {
+  width: 100%;
+    ul {
+      &.nav {
+        li {
+          button {
+            border: 1px solid $poolsBlue;
+            background-color: transparent;
+            color: $white;
+          }
+
+          &.active {
+            button {
+              background-color: transparent;
+              border: 0px;
+              color: $white;
+              background-image: linear-gradient(to bottom, #0099e5, #004a90 50%);
+            }
+          }
+        }
+      }
+    }
+  // .tab-content>.tab-pane {
+  //   padding: 0px 0 15px;
+
+  // }
+
+  // &.poolsBlue {
+  //   ul {
+  //     &.nav {
+  //       li {
+  //         button {
+  //           border: 1px solid $poolsBlue;
+  //           background-color: transparent;
+  //           color: $white;
+  //         }
+
+  //         &.active {
+  //           button {
+  //             background-color: transparent;
+  //             border: 0px;
+  //             color: $white;
+  //             background-image: linear-gradient(to bottom, #0099e5, #004a90 50%);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &.cashColor {
+  //   ul {
+  //     &.nav {
+  //       li {
+  //         button {
+  //           border: 1px solid #c00000;
+  //           background-color: transparent;
+  //           color: $white;
+  //         }
+
+  //         &.active {
+  //           button {
+  //             background-color: transparent;
+  //             border: 0px;
+  //             color: $white;
+  //             background-image: linear-gradient(to bottom, #c00000, #650000 50%);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &.damacaiColor {
+  //   ul {
+  //     &.nav {
+  //       li {
+  //         button {
+  //           border: 1px solid #c00000;
+  //           background-color: transparent;
+  //           color: $white;
+  //         }
+
+  //         &.active {
+  //           button {
+  //             background-color: transparent;
+  //             border: 0px;
+  //             color: $white;
+  //             background-image: linear-gradient(to bottom, #c00000, #650000 50%);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &.sandakanColor {
+  //   ul {
+  //     &.nav {
+  //       li {
+  //         button {
+  //           border: 1px solid $sandakanColor;
+  //           background-color: transparent;
+  //           color: $sandakanColor;
+  //         }
+
+  //         &.active {
+  //           button {
+  //             background-color: transparent;
+  //             border: 0px;
+  //             color: $white;
+  //             background-image: linear-gradient(to bottom, #008300, #014f01 50%);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &.totoRed {
+  //   ul {
+  //     &.nav {
+  //       li {
+  //         button {
+  //           border: 1px solid $totoRed;
+  //           background-color: transparent;
+  //           color: $totoRed;
+  //         }
+
+  //         &.active {
+  //           button {
+  //             background-color: transparent;
+  //             border: 0px;
+  //             color: $white;
+  //             background-image: linear-gradient(to bottom, #c00000, #650000 50%);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &.dirwanBlue {
+  //   ul {
+  //     &.nav {
+  //       li {
+  //         button {
+  //           border: 1px solid $dirwanBlue;
+  //           background-color: transparent;
+  //           color: $dirwanBlue;
+  //         }
+
+  //         &.active {
+  //           button {
+  //             background-color: transparent;
+  //             border: 0px;
+  //             color: $white;
+  //             background-image: linear-gradient(to bottom, #3529ff, #1c1684 50%);
+  //           }
+
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &.magnumYellow {
+  //   ul {
+  //     &.nav {
+  //       li {
+  //         button {
+  //           border: 1px solid $magnumYellow;
+  //           background-color: transparent;
+  //           color: $magnumYellow;
+  //         }
+
+  //         &.active {
+  //           button {
+  //             background-color: transparent;
+  //             border: 0px;
+  //             background-image: linear-gradient(to bottom, #e9bb29, #836916);
+  //           }
+
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  ul.nav {
+    margin: 15px 0 5px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+    width: 100%;
+
+    @include rwdw(991) {
+      // margin:0px 0px;
+      padding: 0px;
+      overflow: visible;
+    }
+
+    @include rwdw(480) {
+      // margin:5px 0;
+    }
+
+    li {
+      margin-right: 10px !important;
+      margin-bottom: 5px;
+
+      @include rwdw(767) {
+        margin-right: 5px !important;
+      }
+
+      &.active {
+        button {
+          background-color: $light_yellow;
+          color: $black;
+          // .magnumYellow & {
+          //   background-color:$magnumYellow!important;
+          //   color:$black!important;
+          // }
+          // .dirwanBlue & {
+          //   background-color:$dirwanBlue!important;
+          //   color:$white!important;
+          // }
+          // .sandakanColor & {
+          //   background-color:$sandakanColor!important;
+          //   color:$white!important;
+          // }
+        }
+      }
+
+      button {
+        border: 1px solid $light_yellow;
+        background-color: transparent;
+        color: $light_yellow;
+        border-radius: 50px;
+        padding: 10px 15px;
+        background-image: none;
+        text-transform: capitalize;
+        // .magnumYellow & {
+        //   border:1px solid $magnumYellow;
+        //   color:$magnumYellow;
+         
+        // }
+        // .dirwanBlue & {
+        //   border:1px solid $dirwanBlue;
+        //   color:$dirwanBlue;
+        // }
+        // .totoRed & {
+        //   border:1px solid $totoRed;
+        //   color:$totoRed;
+        // }
+        // .sandakanColor & {
+        //   border:1px solid $sandakanColor;
+        //   color:$sandakanColor;
+        // }
+        @include rwdw(767) {
+          padding: 5px 8px;
+          font-size:font(1.1);
+        }
+
+     
+        &.game_rule {
+          padding: 0;
+          border: 0px;
+
+          p {
+            margin: 5px 0;
+            padding: 0px 0;
+
+            @include rwdw(480) {
+              margin: 0px;
+            }
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            background-color: transparent;
+            color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+.game4dIDcat {
+
+  // @extend .game4dcat;
+  ul.nav {
+    // margin:5px 0;
+
+    li {
+      button {
+        // color: $fourDID_theme;
+      }
+
+      &.active button {
+        // background-color: $fourDID_theme;
+        color: $white !important;
+      }
+    }
+  }
+}
+
+.game4dBetList {
+
+  &::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+    /* position: relative; */
+    /* z-index: 10000000000; */
+  }
+
+  &.type_2nd {
+    ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      li {
+        ul {
+          li {
+            width: 100%;
+
+            input {
+              width: 45%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .game4dBetNum {
+    width: 35px;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    background-color: #fdd835;
+
+    &.damacaiColor {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, #3f00b8, #040086);
+    }
+
+    .magnumYellow & {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, #e9bb29, #836916);
+    }
+
+    .dirwanBlue & {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, #3529ff, #1c1684);
+    }
+
+    .totoRed & {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, #c00000, #650000);
+    }
+
+    .sandakanColor & {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, #008300, #014f01);
+      // background-image: linear-gradient(to bottom, #f7b500, #946d01);
+    }
+
+    &.cashColor {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, #008300, #014f01);
+    }
+
+    &.cashColor {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, #0099e5, #004a90);
+    }
+  }
+
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+
+    // padding-bottom:20px;
+    @include rwdw(991) {
+      padding-bottom: 0px;
+    }
+
+    li {
+
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      background-color: #212121;
+      padding: 10px;
+
+      @include rwdw(480) {
+        padding: 3px 10px;
+        margin-bottom: 3px;
+      }
+
+      ul {
+        flex-direction: row;
+        width: 100%;
+        padding-bottom: 0px;
+
+        @include rwdw(767) {
+          flex-wrap: wrap;
+          -ms-flex-direction: inherit;
+        }
+
+        li {
+          margin-bottom: 0px;
+          border-radius: 0px;
+          box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5);
+          background-color: transparent;
+          padding: 0px;
+        }
+      }
+    }
+  }
+
+  input {
+    box-shadow: inset 2px 2px 4px 1px rgba(0, 0, 0, 0.68);
+    border: solid 1px #3d3d3d;
+    background-color: #232323;
+    color: $light_yellow;
+
+    &::placeholder {
+      color: $deep_gray;
+      text-transform: capitalize;
+    }
+
+  }
+}
+
+.game4dCheckBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10px;
+
+  label {
+    color: $white;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    text-transform: Capitalize;
+  }
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    vertical-align: middle;
+    margin-top: 0;
+    // background:#fff;
+    // border:#999 solid 1px;
+    border-radius: 3px;
+    min-height: 25px;
+    min-width: 25px;
+    margin-right: 3px;
+
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.68);
+    border: solid 1px #3d3d3d;
+    background-color: #232323;
+  }
+
+  input[type="checkbox"]:checked {
+    // background: #3190e8;
+
+    background-image: url(../../img/icon/game4dCheck.png);
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
+
+
+.gamd4dbtns {
+  height: 80px;
+  align-items: center;
+  display: flex;
+  font-size: font(1.5);
+  justify-content: space-between;
+
+  @include rwdw(991) {
+    height: auto;
+    padding: 5px 0;
+
+  }
+
+  @include rwdw(480) {
+    height: 50px;
+
+  }
+
+  li {
+    text-align: center;
+    padding: 0 5px;
+
+    button {
+      padding: 12px 8px;
+      width: 100%;
+      font-size: font(1.5);
+      border-radius: 30px;
+
+      @include rwdw(480) {
+        font-size: font(1.3);
+      }
+
+      // background-color:transparent;
+      // background-color:#fdd835;
+    }
+  }
+
+}
+
+.mobile_game4dHistory {
+  margin: 0px 0;
+  width: 100%;
+
+
+  &.fourDID_color {
+    .mobile_game4dHistory--btns {
+      li {
+
+        // &:hover,
+        // &.active {
+        //   button {
+        //     background-color: $fourDID_theme;
+        //     color: $white;
+        //   }
+        // }
+
+        button {
+          background-color: #c25c20;
+          color: $white !important;
+        }
+      }
+    }
+  }
+
+  &--btns {
+    border: 0px;
+    .poolsBlue & {
+      li {
+        button {
+          background-color: #004a90;
+          color: $white;
+        }
+
+        &.active {
+          button {
+            background-color: #0099e5;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .cashColor & {
+      li {
+        button {
+          background-color: #014f01;
+          color: $white;
+        }
+
+        &.active {
+          button {
+            background-color: #008300;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .damacaiColor & {
+      li {
+        button {
+          background-color: #650000;
+          color: $white;
+        }
+
+        &.active {
+          button {
+            background-color: #c00000;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .sandakanColor & {
+      li {
+        button {
+          background-color: #014f01!important;
+          color: $white;
+        }
+
+        &.active {
+          button {
+            background-color: #008300!important;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .totoRed & {
+      li {
+        button {
+          background-color: #650000!important;;
+          color: $white!important;;
+        }
+
+        &.active {
+          button {
+            background-color: #c00000!important;;
+            color: $white!important;;
+          }
+        }
+      }
+    }
+
+    .dirwanBlue & {
+      li {
+        button {
+          background-color: #1c1684!important;
+          color: $white!important;
+        }
+
+        &.active {
+          button {
+            background-color: #3529ff!important;
+            color: $white!important;
+          }
+        }
+      }
+    }
+
+    .magnumYellow & {
+      li {
+        button {
+          background-color: #836916!important;
+          color: $white;
+        }
+
+        &.active {
+          button {
+            background-color: #e9bb29!important;
+            color: $black!important;
+          }
+        }
+      }
+    }
+
+    &.nav {
+      li {
+        margin-right: 1px;
+      }
+    }
+
+    display: flex;
+    width:100%;
+
+    li {
+
+      &:hover,
+      &.active {
+        button {
+          background-color: #fdd835;
+        }
+      }
+
+      button {
+        padding: 8px 15px;
+        margin-right: 2px;
+
+        background-color: #ad921a;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        @include rwdw(991) {
+          padding: 5px 10px;
+        }
+      }
+
+    }
+  }
+
+  .tab-content>.tab-pane {
+    padding: 0px !important;
+
+  }
+}
+
+.gamd4dOpening {
+  display: flex;
+
+  .game4dfirstline {
+    flex-direction: column !important;
+  }
+
+  .gamePrizeNum {
+    li {
+      color: $white;
+      background-color: transparent;
+    }
+  }
+}
+
+.game4d_reviewbtn {
+  padding: 0px !important;
+}
+
+.game4dcal {
+  margin-top: 10px;
+  box-shadow: inset 0 0 4px 4px rgba(0, 0, 0, 0.51);
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 8px;
+
+  ul {
+    display: flex;
+  }
+
+  @include rwdw(991) {
+    padding: 10px 0 0;
+    margin-top: 0px;
+
+  }
+
+  li {
+    color: $white;
+    text-transform: capitalize;
+
+    span {
+      padding: 0 10px;
+    }
+  }
+}
+
+.game4dfooter {
+  float: left;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #01080b;
+
+  .deepRed_btn {
+    @include button-bg(#8c2c2c, $white, $deep_gray, $white);
+    font-size: font(1.5);
+    padding: 12px 0;
+    border-radius: 30px;
+
+    @include rwdw(991) {
+      font-size: font(1.2);
+      padding: 12px 0;
+    }
+  }
+}
+
+
+// game4DID
+.game4DID {
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:10px 0;
+    // max-height: 48vh;
+    // overflow-y: auto;
+    // margin-top: 10px;
+    // margin-bottom:120px;
+    // padding-bottom:90px;  // TODO: need update
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+    &::-webkit-scrollbar{
+      width:0px;
+    }
+   
+    // @media screen and (min-device-aspect-ratio: 16/9) {
+    //   max-height: 44vh;
+    //  }
+    // @include rwdw(1680){
+    //   max-height:35vh;
+    // }
+    // @include rwdw(1366){
+    //   max-height: 40vh;
+    //  padding-bottom:40px;
+    // }
+    // @include rwdw(1280){
+    //   max-height:38vh;
+     
+    // }
+    
+    // @include rwdw(1199){
+    //   max-height:68vh;
+    // }
+    // @include rwdw(991){
+    //   margin-top:10px;
+    // }
+    // @media screen and (orientation: landscape) and (max-width:1024px){
+    //   padding-bottom: 0px;  // TODO: need update
+    //   max-height: 30vh;
+    // }
+    // @include rwdw(480){
+    //   max-height: 50vh;
+    // }
+    // @include rwdw(375){
+    //   max-height: 42vh;
+    //   padding-bottom: 0;  // TODO: need update
+    // }
+    // @include rwdw(360){
+    //   max-height: 55vh;
+    // }
+    // @include rwdw(320){
+    //   max-height: 33vh;
+    // }
+    li {
+      
+      padding: 0px 10px 15px;
+      .game4DIDBox{
+        height:100%;
+      }
+      @include rwdw(991) {
+        
+        padding: 0px 10px 5px;
+        &:last-child{
+          padding-bottom: 0px 10px  0px;
+        }
+      }
+
+     
+    }
+   
+  }
+}
+// #game4dfiftyTOfifity{
+//   .game4DID__content{
+//     ul {
+//       width: 50%;
+      
+//       @include rwdw(576) {
+//         width: 100%;
+//       }
+//     }
+    
+//     li{
+//       width:100%;
+
+     
+//     }
+//   }
+// }
+.game4DIDBox {
+  display: flex;
+  border-radius: 5px;
+  font-weight: 100;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #2a2a2a;
+  font-weight:200;
+
+  // margin-bottom: 10px;
+  label{
+    color:$white;
+    margin-bottom: 0px;
+    font-weight:100;
+    text-align: center;
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  input {
+    @include input_style;
+    color:$white;
+  }
+  &__rank {
+    border-radius: 5px 0 0px 5px;
+    background-color: #434343;
+    color: $white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  &__box {
+    background-color: #2a2a2a;
+    padding: 10px !important;
+    display: flex;
+    flex-wrap: wrap;
+  
+
+    @include rwdw(767) {
+      padding: 10px !important;
+    }
+
+    ul {
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+
+      li {
+        // width:auto;
+        // width: 100%;
+        padding: 5px !important;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        flex:1;  
+        .cross {
+          border-radius: 7px;
+          border: solid 1px #3d3d3d;
+          color: $gray;
+          font-weight: 100;
+          font-size: font(1.5);
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+       
+      }
+    }
+
+  
+  }
+  &__discount{
+    padding:0 10px;
+    font-size:font(1);
+    p{
+      padding:5px 0 0!important;
+      margin-bottom: 0px;
+    }
+  }
+  &__title {
+    font-size: font(1.15);
+    font-weight: 100;
+    text-align: center;
+
+    @include rwdw(767) {
+      font-size: font(1.1);
+    }
+  }
+  
+  &__KeiLine {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+ 
+  &__line {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    .game4DIDBox__midBox {
+      flex: 2;
+      margin-bottom: 0;
+      // margin-right: 10px;
+    }
+    // .game4DIDBox__Total {
+    //   flex: 3;
+    //   justify-content: flex-end;
+    //   position: relative;
+
+    
+    // }
+
+    #game4dstandard &,
+    #TwoDDepan &,
+    #TwoDTengah &,
+    #game4dDasar &,
+    #game4dshio &,
+    #game4dSilang &,
+    #game4dKembang &,
+    #game4dKombinasi & {
+      .game4DIDBox__midBox {
+        flex: 3;
+      }
+      .game4DIDBox__Total {
+        flex: 2;
+      }
+    }
+  }
+
+  &__midBox {
+    color: $white;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    // align-items: flex-end;
+    margin-bottom: 10px;
+    font-weight: 100;
+    // justify-content: space-between;
+
+    ul {
+      width: 100%;
+      // flex-wrap: wrap;
+    }
+
+    li {
+      padding: 5px !important;
+      width: 100%;
+      // justify-content: center;
+    }
+
+    input {
+      @include input_style;
+      color: $white;
+    }
+
+    select {
+      border-radius: 7px;
+      border: solid 1px #3d3d3d !important;
+      background-color: #232323 !important;
+      height: 100%;
+      padding: 5px 10px!important;
+      margin-bottom: 5px;
+      option {
+        color: $white !important;
+        text-transform: capitalize !important;
+      }
+    }
+
+    p {
+      margin-bottom: 0px;
+      padding: 0 5px;
+      white-space: nowrap;
+      // width:100%;
+    }
+
+  }
+  &--select{
+    text-align: center;
+  }
+  &__BetBox {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    // flex: 1;
+    // justify-content: space-between;
+    // width: 100%;
+    // flex:2;
+    p {
+      margin-bottom: 0px;
+      width: auto;
+    }
+    span {
+      font-size: font(1);
+    }
+
+    input {
+      padding: 0px;
+      box-shadow: 0px 0px 0px;
+      border: 0px;
+      border-radius: 7px;
+      box-shadow: inset 2px 2px 4px 1px rgba(0, 0, 0, 0.68);
+      border: solid 1px #3d3d3d;
+      background-color: #232323;
+      padding: 5px;
+    }
+  }
+
+  &__Total {
+    width: 100%;
+    display: flex;
+    color: $white;
+    justify-content: center;
+    // flex:2;
+    text-align: right;
+    flex-wrap: wrap;
+    span {
+      color: $deep_gray;
+      margin-right: 5px;
+    }
+
+    p {
+      border-radius: 7px;
+      box-shadow: inset 2px 2px 4px 1px rgba(0, 0, 0, 0.68);
+      border: solid 1px #3d3d3d;
+      background-color: #232323;
+      margin: 0px;
+      padding: 5px;
+      width:100%;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+
+    button {
+      text-transform: capitalize;
+      
+    }
+  }
+  &__payout{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0;
+    font-size:font(1);
+   
+  }
+  &__payoutList{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.game4D__btn{
+  padding:5px 10px!important;
+    .magnumYellow & {
+      @include line-button ($white,$magnumYellow,$magnumYellow,$black );
+    }
+    .totoRed & {
+      @include line-button ($white,$totoRed,$totoRed,$white );
+    }
+    .sandakanColor & {
+      @include line-button ($white,$sandakanColor,$sandakanColor,$white );
+    }
+    .dirwanBlue & {
+      @include line-button ($white,$dirwanBlue,$dirwanBlue,$white );
+    }
+} 
+.gameTableSelect {
+  // margin-bottom: 10px;
+  
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 10px;
+      @include checkbox;
+      padding:0px;
+    }
+  }
+}
+
+.gamd4DMainWrapper {
+  position:relative;
+
+}
+
+.game4DTable {
+  width: 100%;
+  @include checkbox;
+  &__content{
+     @include rwdw(767){
+       padding:20px;
+      li{
+        &:before{
+          content: attr(data-text);
+          display: flex;
+          position:relative;
+          z-index: 100;
+          
+        }
+        &:first-child{
+          &:before{
+            .magnumYellow & {
+              color:$black;
+            }
+          }
+          span{
+            position:relative;
+            z-index: 10;
+            .magnumYellow & {
+              color:$black;
+            }
+          }
+          &:after{
+            content: "";
+            .magnumYellow &{
+              background-color: #e9bb29;
+            }
+            .dirwanBlue &{
+              background-color: $dirwanBlue;
+            }
+            .totoRed &{
+              background-color: $totoRed;
+            }
+            .sandakanColor &{
+              background-color: $sandakanColor;
+
+            }
+            position: absolute;
+            width: 100%;
+            /* display: block; */
+            z-index: 100;
+            width: 80px;
+            z-index: 0;
+            height: 20px;
+            left: -15px;
+  
+          }
+        }
+      }
+     }
+  }
+  &__inner{
+    @include rwdw(767){
+      li{
+        margin-bottom:5px!important;
+        &:first-child{
+          &:before{
+            .magnumYellow &{
+              color: $white;
+            }
+          }
+          &:after{
+            background-color:transparent;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &_typeC{
+    @include rwdw(767){
+      flex-wrap:wrap;
+      ul{
+        flex-wrap:nowrap;
+        li{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  &_typeB,
+  &_typeA{
+    li{
+      padding:5px 0px;
+      @include rwdw(767){
+        margin-bottom:10px;
+      }
+      span{
+        position: relative;
+        z-index: 1;
+      }
+    }
+    @include rwdw(767){
+      li{
+        padding:0px 0px;
+      }
+       flex-wrap:wrap;
+        ul{
+          flex-wrap:wrap;
+          li{
+            width:100%;
+            margin-bottom:5px;
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+  }
+  &_typeB{
+    .game4DTable__inner{
+      @include rwdw(767){
+        padding:15px;
+      }
+    }
+  }
+}
+.prize{
+  width:100%;
+  text-align: center;
+  @include rwdw(767){
+    text-align: left;
+  }
+}
+.d-thead {
+  ul {
+    display: flex;
+    background-color: #434343;
+    justify-content: space-evenly;
+    li {
+
+      color: $white;
+      padding: 5px 0px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+
+    }
+  }
+}
+ 
+.d-tbody {
+  .delete_btn{
+    @include rwdw(767){
+      position:absolute;
+      margin-top:-30px;
+    }
+  }
+  ul {
+    
+    
+    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    @include rwdw(767) {
+      display: flex;
+    }
+    li {
+      // padding: 5px 0px;
+      // width:100%;
+      color: $white;
+      text-align: center;
+
+      @include rwdw(767) {
+        // padding: 3px 0px;
+      }
+      ul {
+        display: flex;
+        width:100%;
+        flex-direction: row;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        background-color: #2a2a2a;
+        margin-bottom: 0px;
+
+        @include rwdw(767) {
+          // flex-wrap:nowrap;
+          // padding: 10px 10px;
+          justify-content: space-between;
+        }
+        li {
+          // padding: 5px 3px;
+          // margin-bottom: 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          @include rwdw(767) {
+            // padding:0px;
+            justify-content: flex-start;
+            align-items:center;
+            // &:before {
+            //   content: attr(data-text);
+            //   padding:0 0px;
+              
+            
+            // }
+          }
+        }
+        ul {
+          // padding: 0px 0px !important;
+          box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5) !important;
+          background-color: #2a2a2a;
+          justify-content: space-evenly;
+          @include rwdw(767) {
+            flex-direction: column;
+            li {
+              display: flex;
+              align-items: center;
+                 white-space: nowrap;
+                  &:before {
+                  margin-right: 10px;
+                  width: 33.3%;
+                  max-width: 120px;
+                  display: flex;
+                }
+              
+            }
+          }
+        }
+
+        
+      }
+
+      input {
+        box-shadow: inset 2px 2px 4px 1px rgba(0, 0, 0, 0.68);
+        border: solid 1px #3d3d3d;
+        background-color: #232323;
+        border-radius: 7px;
+      }
+
+      p {
+        text-align: center;
+        margin-bottom: 0px;
+        @include rwdw(767){
+          text-align: left;
+          width:100%;
+        }
+      }
+    }
+  }
+}
+
+.fourDAll_style {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+
+    @include rwdw(480) {
+      height: 180px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      border-style: solid;
+      border-width: 1px;
+      border-image-source: linear-gradient(to bottom, #595858 0%, #080808);
+      border-image-slice: 1;
+      background-blend-mode: normal, hard-light, screen;
+      background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0) 50%, rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, #ffffff -87%, rgba(0, 0, 0, 0.5) 34%), linear-gradient(to bottom, rgba(0, 0, 0, 0) 37%, #3b3b3b 81%);
+
+      img {
+        @include rwdw(480) {
+          max-width: 30px;
+        }
+
+      }
+
+      .icon_hover {
+        display: none;
+      }
+
+      &:hover {
+        .icon_default {
+          display: none;
+        }
+
+        .icon_hover {
+          display: block;
+        }
+      }
+    }
+  }
+}

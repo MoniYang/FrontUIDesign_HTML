@@ -1,0 +1,64 @@
+ 20200602
+
+* GHL v2.1.1 (https://getbootstrap.com/)
+* Copyright 2020 Goldenhippo Authors
+* Copyright 2020 Goldenhippo, Inc.
+
+GHL.style.scss -- 預設樣式存放處及管理個別style
+  |-- Minxins_default -- > 共用scss function 含顏色、字體等等
+  |-- GHL_main_scss  ---> 主架構
+  |-- Boss_ask.scss ---> 老闆要求的投注畫面 HKPK10 
+  |-- racing.scss -- > GPRacing
+  |-- MarkSix.scss -- > 六合彩
+  |-- racing.scss -- > gpracing
+  |-- sicbo.scss -- > sicbo
+  |-- fourD_style --> 4D
+  |-- Two75_style --> 2D75
+  |-- Two36_style --> 2D36
+  |-- responsive.scss -- > media Query
+
+---------------------------------------------------------------
+
+* GHL v2.0.1 (https://getbootstrap.com/)
+ * Copyright 2020 Goldenhippo Authors
+ * Copyright 2020 Goldenhippo, Inc.
+
+20200428--調整css 架構如下:
+
+GHL.style.scss -- 預設樣式存放處及管理個別style
+  |-- Minxins_default -- > 共用scss function 含顏色、字體等等
+  |-- GHL_main_scss  ---> 主架構
+  |-- Boss_ask.scss ---> 老闆要求的投注畫面 HKPK10 
+  |-- racing.scss -- > GPRacing
+  |-- MarkSix.scss -- > 六合彩
+  |-- responsive.scss -- > media Query
+
+complier後，結果只輸出 "GHL.style.css"，Head只載入這支
+
+
+
+20200730--調整css 架構如下 
+
+header.scss 只放header
+需要@import "Minxins_default"
+
+
+GHL.style.scss -- 預設樣式存放處及管理個別style
+  |-- Minxins_default -- > 共用scss function 含顏色、字體等等
+  |-- GHL_main_scss  ---> 主架構
+  |-- animate.scss  ---> 放動畫
+  |-- Boss_ask.scss ---> 老闆要求的投注畫面 HKPK10 
+  |-- racing.scss -- > GPRacing
+  |-- MarkSix.scss -- > 六合彩
+  |-- fourD_style.scss -- >4D
+  |-- TwoD75_style.scss -- > 2d75
+  |-- TwoD36_style.scss -- > 2d36
+  |-- Sicbo.scss -- > 骰寶
+  |-- responsive.scss -- > media Query
+
+
+complier後，結果只輸出 "GHL.style.css"，"header.css"，Head載入這兩支
+若是修改header 只需要單獨覆蓋 header.css 這個檔案
+
+其他遊戲畫面， GPLottery 的 GHL.style.css 為主要的css
+

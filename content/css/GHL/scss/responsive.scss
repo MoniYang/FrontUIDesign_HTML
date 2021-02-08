@@ -1,0 +1,2539 @@
+
+
+
+
+@media (max-width: 1680px) {
+    .lottery_loby {
+      padding: 0 5%;
+    }
+  
+    .lottery_loby .lottery_box2 .lottery_box_firstline {
+      padding: 5px;
+  
+      .lottery_box_secline {
+        .lottery_item_bonus {
+          font-size: 24px;
+        }
+  
+        .lottery_num {
+          font-size: 14.4px;
+        }
+  
+        .lottery_title {
+          font-size: 15.6px;
+        }
+  
+        .lottery_btn li {
+          padding: 0 3px;
+  
+          a {
+            font-size: 13.2px;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  
+    ul.nav.tab_area {
+      right: 8%;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .GHL-SlideBar.slideBarHeight ul {
+      max-height: 65vh;
+    }
+  
+    ul.nav.tab_area {
+      /* right:0%; */
+    }
+  
+    .GHL-margin {
+      margin-left: -10%;
+    }
+  
+    .top_info {
+      border: 1px solid #eba410;
+      padding: 30px;
+      text-align: center;
+      height: 10%;
+      color: #efefef;
+      margin-bottom: 10px;
+    }
+  
+    .OpenLottery-circleBig {
+      /*background-color: #01ebab !important;*/
+      width: 100% !important;
+      height: 100% !important;
+      border-radius: 10px !important;
+      font-size: 20px !important;
+      padding: 0;
+  
+      span {
+        color: #ff0000;
+      }
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    .rank_box {
+      top: 0;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1599.98px) {
+   
+    .sigh_area {
+      right: 0;
+    }
+  
+    // .carousel .item {
+    //   max-height: 400px;
+    // }
+  
+    .bonus_bottom {
+      margin-top: -0px;
+    }
+  
+    .tab_area {
+      right: 5px !important;
+    }
+  
+    .bet_item {
+      padding: 15px 10px 10px;
+    }
+  
+    .main_content {
+      /* margin-top: 280px; */
+    }
+  
+    ul.nav.tab_area {
+      right: 0% !important;
+    }
+  
+    .GHL-SlideBar.slideBarHeight ul {
+      max-height: 58vh;
+    }
+  
+    .bonus_area {
+      .bonus_top .main_bonus {
+        position: relative;
+        float: none;
+      }
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .lobby_gameName {
+      span {
+        font-size: font(1.8);
+      }
+    }
+  
+  
+  
+    .game_rule_itemName:after {
+      width: 10%;
+    }
+  
+    .header.fixed .logo {
+      margin-top: -80px;
+      margin-left: -20px;
+    }
+  
+    .login_box {
+      right: 0;
+    }
+  
+    .sigh_area {
+      right: 2%;
+      margin-top: -85vh;
+    }
+  
+    .top_height {
+      margin-top: 0px;
+    }
+  
+    .bonus_bottom {
+      margin-top: 0;
+    }
+  
+   
+  
+    .bonus_box {
+      // width: 70%;
+
+      top: 0;
+      float: none;
+    }
+  
+    .main_bonus {
+      float: none;
+    }
+  
+    // .navbar-collapse ul.nav>li {
+    //   margin: 0 5px;
+    // }
+  
+    .bet_item {
+      height: 200px;
+    }
+  
+    .tab_area_btn {
+      right: 0px;
+    }
+  
+    .tab_area {
+      right: 0px;
+  
+      /* right: -47px; */
+  
+      ul li:last-child {
+        height: 30px;
+      }
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .sigh_area {
+      width: 80%;
+      right: 10%;
+      margin-top: -50vh !important;
+    }
+  
+    .login_area {
+      left: 0;
+    }
+  
+   
+    .slide_btn_area {
+      right: 0%;
+    }
+  
+  
+  
+    .bonus_box {
+      padding: 20px 50px;
+    }
+  
+    .lottery_loby {
+      margin: 20px 0 40px;
+  
+      .lottery_bonus {
+        font-size: 36px;
+      }
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+   
+  
+    .login_box {
+      width: 100%;
+      right: 0;
+  
+      .login_s_area {
+        width: 80%;
+        right: 10%;
+      }
+    }
+  
+    .carousel .item {
+      max-height: 700px;
+      // background-size: 130%;
+    }
+  
+    .GHL-SlideBar ul {
+      max-height: 45vh;
+    }
+  
+    .bet_item {
+      padding: 15px 10px 10px;
+  
+      /* max-height:165px; */
+      /* overflow: hidden; */
+    }
+  
+    .chips_icon {
+      right: 0;
+      width: 50px;
+    }
+  
+    .current_box li span {
+      font-size: 20px;
+    }
+  
+    .current_topic:before {
+      width: 60%;
+    }
+  
+    ul.nav.tab_area {
+      right: 0% !important;
+      width: 60px;
+    }
+  
+    .tab_area li img {
+      width: 40px;
+    }
+  
+    .main_content {
+      width: 85%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    
+    .bottom_icons {
+      margin-top: 20px;
+    }
+  
+    .bottom_bank li {
+      width: 20%;
+      float: left;
+      margin-bottom: 10px;
+    }
+  
+    .bottom_icons img,
+    .license img {
+      // max-height: 30px;
+    }
+  
+    .bottom_bank img {
+      // max-height: 40px;
+      width: auto;
+    }
+  
+  
+    .text-sm-left {
+      text-align: left !important;
+    }
+  
+    .text-sm-right {
+      text-align: right;
+    }
+  
+    .mt-sm-5 {
+      margin-top: 5px;
+    }
+  
+    .main_area {
+      padding:100px 0px 0px;
+    }
+  
+    .quick_btn {
+      width: 45px;
+      height: 45px;
+      font-size: 10px;
+      text-align: center;
+      padding: 5px 0 0 0 !important;
+    }
+  
+    .hot_btn .quick_btn {
+      top: -12px;
+      font-size:font(1);
+      padding: 8px 0!important;
+    }
+  
+    .game_rule_itemName {
+      color: #75ddff;
+    }
+  
+    .game_rule_list li {
+      margin-bottom: 20px;
+      padding-left: 10px;
+  
+      &:before {
+        content: "\f0da";
+        font-family: 'FontAwesome';
+        float: left;
+        color: #75ddff;
+      }
+    }
+  
+    .game_rule_itemName:after {
+      /* width:10%; */
+      display: none;
+    }
+  
+    .close_float_nav.is-active:before {
+      // display: none;
+    }
+  
+    .trans_box li {
+      margin-bottom: 10px;
+  
+      span {
+        font-size: 14.4px;
+      }
+    }
+  
+    select {
+      font-size: 15.6px;
+    }
+  
+    .info_tab .nav-item span {
+      padding: 5px 10px;
+    }
+  
+    .dropmenu .close_float_nav {
+      top: -50px;
+  
+      &:before {
+        content: "\f00d";
+        font-family: "FontAwesome";
+        display: none;
+      }
+    }
+  
+    .close_float_nav {
+      position: relative;
+      // top: -20px;
+      font-size: 25px;
+    }
+  
+    .histroy_list {
+     padding-bottom: 0px;
+    }
+  
+    .game_rule_menu {
+      font-size: 18px;
+      height: 100px;
+      margin-bottom: 15px;
+    }
+  
+    // .histroy_list  li {
+    //   text-align: center;
+    //   padding-bottom: 5px;
+    // }
+  
+    .dropmenu {
+    
+      // &::-webkit-scrollbar {
+      //   width: 0px;
+      // }
+      @include rwdw(480){
+        // padding:70px 15px 0;
+      }
+    }
+    
+    .chips_icon {
+      // position: fixed;
+      // right: 20px;
+      // top: 20px;
+    }
+  
+    .small_section {
+      padding: 0;
+    }
+  
+    .mt-sm-60 {
+      margin-top: 60px !important;
+    }
+  
+    .mt-sm-40 {
+      margin-top: 40px !important;
+    }
+  
+    .mt-sm-20 {
+      margin-top: 20px !important;
+    }
+  
+    .mt-sm-10 {
+      margin-top: 10px !important;
+    }
+  
+    .mt-sm-0 {
+      margin-top: 0 !important;
+    }
+  
+    .top_height {
+      margin-top: 0px;
+    }
+  
+    .show_pic {
+      margin-top: 20px;
+    }
+  
+    .quicklink {
+      position: relative;
+      left: 0;
+      float: left;
+      width: 100%;
+      margin-top:20px;
+      padding: 20px 10px 10px;
+      border-radius: 50px;
+      // top:-50px;
+  
+      ul {
+        // padding: 0 5%;
+        
+  
+        li {
+        
+          margin-bottom: 10px;
+  
+          img {
+            float: none;
+            margin: 0 auto;
+          }
+  
+          p {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin: 10px 0 0;
+            top: 0;
+          }
+        }
+      }
+    }
+  
+    .bonus_bottom {
+      margin-bottom: 0px;
+    }
+  
+    .game_btn {
+      top: 110px;
+    }
+  
+    .chips_money_area .main_content {
+      margin-left: 0 !important;
+      width: 100% !important;
+    }
+  
+    .total_btn button {
+      font-size: 14.4px;
+    }
+  
+    .group_title {
+      font-size: 18px;
+    }
+  
+    .login_box {
+      width: 100%;
+      right: 0;
+  
+      .login_s_area {
+        width: 80%;
+        right: 10%;
+      }
+    }
+  
+    .table_style .div-tbody {
+      ul {
+        display: block;
+      }
+  
+      .table_text ul {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  
+    .winner_item {
+      background-color: rgba(43, 96, 141, 0.5);
+      margin-bottom: 10px;
+      padding: 10px 0;
+  
+      li {
+        margin-bottom: 5px;
+  
+        p {
+          font-size: 14.4px;
+        }
+      }
+    }
+  
+    .rank_box {
+      padding: 50px 50px 30px;
+      clip-path: none;
+    }
+  
+    .navbar-collapse ul.nav>li:hover a>span {
+      border-bottom: 0;
+      color: #FFDC00;
+    }
+  
+    .group_box ul li {
+      padding: 10px;
+      width: 100%;
+      margin: 0 0 10px;
+    }
+  
+    .carousel {
+      // margin-top: 50px;
+  
+      .item {
+        max-height: 500px;
+        // background-size: contain;
+      }
+    }
+  
+  
+    .marqee {
+      max-width: 100%;
+      margin: 0 auto;
+      float: none;
+      top: 0; // 65px;
+      left:0px;
+    }
+  
+    .lottery_loby {
+      margin: 40px 0px;
+    }
+  
+    .sigh_area {
+      width: 80%;
+      margin-top: -70vh !important;
+      padding: 30px 10px;
+    }
+  
+    .table_style {
+      li {
+        padding: 0;
+      }
+  
+      ul.nav>li a {
+        font-size: 14.4px;
+        margin: 0 3px 5px;
+      }
+  
+      .div-tbody {
+        float: left;
+        width: 100%;
+  
+        .table_text {
+          float: left;
+          margin-bottom: 10px;
+          width: 100%;
+  
+          li {
+            padding: 5px 10px;
+            justify-content: left;
+  
+            &:before {
+              content: attr(data-th) " : ";
+              margin-right: 10px;
+              font-size: 14.4px;
+              font-weight: 400;
+              color: $yellow;
+              text-transform: capitalize;
+            }
+  
+            &:first-child {
+              border-radius: 10px 10px 0 0;
+              border-top: 5px solid #eba410;
+            }
+  
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+  
+        .input_area {
+          border: 0;
+          border-radius: 10px 10px 0 0;
+  
+          .delete_btn {
+            float: right;
+          }
+        }
+      }
+    }
+  
+    .bonus_area {
+      position: relative;
+      left: 0%;
+      z-index: 1;
+      margin-bottom:0px;
+      .bonus_top p.bonus_money {
+        margin: 0;
+        font-size: 36px;
+      }
+  
+      .bonus_bottom li {
+        width: 100% !important;
+      }
+    }
+  
+    .bonus_box {
+      // padding: 5px 0px 5px;
+      // height: 70px;
+    }
+  
+    .bonus_bottom ul {
+      padding: 10px 15px;
+  
+      li span {
+        font-size: 18px;
+      }
+    }
+  
+    .main_bonus {
+      font-size: 30px;
+      margin-top:-15vh;
+    }
+  
+    .bet_item {
+      height: auto !important;
+    }
+  
+    .logo .back {
+      display: none;
+      // display: block !important;
+      // position: absolute;
+    }
+  
+    .lottery_box .current_box li {
+      /* width:40px; */
+    }
+  
+    .lottery_title {
+      width: 70%;
+  
+      /* height: 75px; */
+      margin: 35px auto 0;
+  
+      /* font-size: 40px; */
+    }
+  
+    .lottery_box {
+      background-size: 80%;
+  
+      /* height:380px; */
+      margin-bottom: 20px;
+    }
+  
+    ul.nav>li a {
+      padding: 0;
+    }
+  
+    .navbar-default {
+      .navbar-nav>li {
+        margin: 0;
+  
+        a {
+          padding: 0 15px !important;
+        }
+      }
+  
+      .navbar-collapse,
+      .navbar-form {
+        border: 0px;
+        box-shadow: 0 0 0;
+      }
+    }
+  
+    .svg_nav {
+  
+      &:hover .svg_normal,
+      .svg_hover {
+        /* opacity: 0; */
+        display: none !important;
+      }
+  
+      &:hover .svg_hover {
+        display: block !important;
+  
+        /* opacity: 1; */
+      }
+  
+      display: block !important;
+  
+      p {
+        margin: 0;
+        text-align: center;
+      }
+  
+      img,
+      .svg_normal {
+        width: 30px;
+        padding: 0;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  
+    .nav_menu {
+      float: left;
+      width: 100%;
+      text-transform: capitalize;
+      font-size: 13.2px;
+    }
+  
+    .nav_web {
+      display: none !important;
+    }
+  
+    .navbar-default {
+      background-color: transparent;
+    }
+  
+    ul.nav {
+      >li>a>span {
+        font-size: 12px;
+        padding: 5px 0 0;
+      }
+  
+      &.tab_area {
+        width: 70px;
+      }
+    }
+  
+    .nav-tabs.tab_area>li {
+      display: inline-block;
+    }
+  
+    .tab_area li img {
+      max-width: 40px !important;
+    }
+  
+    .logo {
+      /* display: none; */
+      margin: 0 auto;
+      // position: fixed;
+      // top: 0px;
+      // width: 100%;
+      // left: 0;
+      padding:5px !important;
+      img{
+        width: 100%;
+      }
+      a {
+        display: block;
+      }
+    }
+  
+    .GHL-Chips.close .chips_text {
+      font-size: 16px !important;
+      text-align: center !important;
+      width: 100%;
+    }
+  
+    .navbar-nav>li>.dropdown-menu {
+      display: none !important;
+    }
+  
+    .mobile_nav {
+      display: block;
+      position: fixed;
+      z-index: 100000;
+      // height: 6-px;
+      width: 100%;
+      bottom: 0px;
+      text-align: center;
+      z-index: 100000000;
+      border-radius: 5px 5px 0 0;
+      border-top: 3px solid #6c85e2;
+      background-image: linear-gradient(135deg, #0ccbef 0%, #091f59 48%);
+  
+      /* background: rgb(75, 62, 150); */
+  
+      ul {
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin: 0 !important;
+      }
+  
+      li {
+        span {
+          width: 100%;
+          float: left;
+          color: #efefef;
+        }
+  
+        display: inline-block;
+        margin: 0 0px !important;
+  
+        /* align-items: center; */
+        /* justify-content: center; */
+  
+        &:last-child {
+          width: 0 !important;
+        }
+      }
+    }
+  
+    @keyframes mobile_logo {
+      0% {
+        top: 45px;
+      }
+  
+      100% {
+        top: 0px;
+      }
+    }
+  
+    .logo .back {
+      a {
+        /* display: none; */
+        display: block;
+        float: left;
+        color: #626ff5;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 1.5;
+        padding: 10px;
+        margin: 10px 5px;
+      }
+  
+      i {
+        font-size: 30px;
+      }
+    }
+  
+    .top_menu {
+    
+  
+      &:before,
+      &:after {
+        display: none;
+      }
+  
+      li {
+
+        padding: 0 10px;
+        margin: 0;
+  
+        &:nth-child(3),
+        &:nth-child(2),
+        &:last-child {
+          border-right: 0px !important;
+          padding-right: 0px !important;
+        }
+  
+        a {
+          font-size: 16px;
+         
+          span {
+            // font-weight: bold;
+            color: $white;
+            margin-right:5px;
+          }
+        }
+      }
+  
+      .login_s_area {
+        width: 60%;
+        padding: 30px 20px;
+        text-align: left;
+        right: 20%;
+        position: fixed;
+  
+        label {
+          font-size: 12px;
+        }
+  
+        li {
+          border-right: 0;
+          padding: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  
+    .fixed .GHL-Chips.close {
+      padding: 10px;
+    }
+  
+    .close .current_btn {
+      top: 18px;
+      font-size: 16px;
+      right: -0px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .total_calculation ul {
+      width: 100%;
+    }
+  
+    ul.nav.tab_area {
+      right: 0% !important;
+      width: 100% !important;
+      text-align: center;
+      top: 0;
+      position: relative;
+    }
+  
+    .GHL-Chips {
+      &.close {
+        width: 60px;
+        right: 0;
+        height: 65px;
+        text-align: center;
+        padding: 10px 0px !important;
+      }
+  
+      padding: 50px;
+  
+      /* margin-top:15px; */
+      /* position: fixed; */
+      /* width:300px; */
+      /* right:0; */
+      /* top:0; */
+      /* bottom:20%; */
+      /* z-index: 1000000000000000000000!important; */
+      /* height:100vh; */
+    }
+  
+    // .header.fixed .logo img {
+    //   animation: none;
+    //   transform: scale(1);
+    //   left: 10px !important;
+    //   top: -20px;
+    // }
+  
+  
+  
+    .GHL-SlideBar.slideBarHeight {
+      margin-top: 20px;
+  
+      &.fixed {
+        margin-top: 20px;
+      }
+    }
+  
+    .navbar-default {
+      padding:0 0 0px;
+      background-image: linear-gradient(to bottom, #485563, #29323c);
+      /* display: none; */
+    }
+  
+    .header {
+      float: left;
+      width: 100%;
+     
+      // background-color: transparent;
+    }
+  
+    #footer {
+      margin-top: 20px;
+      margin-bottom: 80px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .total_btn li {
+      width: auto !important;
+    }
+  
+    .total_calculation li {
+      width: 15%;
+      margin: 0;
+      padding: 0 3px;
+  
+      img {
+        max-width: 100%;
+      }
+    }
+  
+    .main_content {
+      width: 80%;
+      padding-bottom: 8vh;
+    }
+  
+    .tab_area {
+      right: 2px !important;
+    }
+  
+    .current_topic:before {
+      width: 78%;
+    }
+  
+    .SideBar_h5.current_topic::before {
+      width: 80% !important;
+    }
+  
+    .GHL-SlideBar {
+      ul {
+        /* width:25%; */
+        height: 55vh;
+      }
+  
+      li a {
+        font-size: 18px;
+      }
+    }
+  
+    .current_box li {
+      span {
+        font-size: 20px;
+      }
+  
+      width: 40px;
+  
+      img {
+        max-width: 20px;
+      }
+    }
+  
+    .bet_item {
+      padding: 0px;
+  
+      ul li {
+        /* font-size:25px;
+              padding: 10px 3px; */
+      }
+    }
+  
+    .win_title {
+      /* font-size:30px; */
+    }
+  
+    .GHL-SlideBar.slideBarHeight ul {
+      max-height: 80vh;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .modal-dialog {
+      /* width: 100% !important; */
+  
+      /* margin: 30px auto; */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .rank_title p {
+      font-size: 30px;
+    }
+  
+    .carousel .item {
+      max-height: 380px;
+    }
+  
+    .lottery_loby {
+      padding: 0 30px;
+  
+      button {
+        font-size: 13.2px;
+      }
+    }
+  
+    .sigh_area {
+      right: 5%;
+      width: 90%;
+      margin-top: -580px !important;
+      margin-bottom: 0px;
+    }
+  
+    .login_area {
+      left: 0%;
+      display: block;
+      margin-bottom: 100px;
+  
+      .login_box .login_s_area {
+        margin-top: -80px;
+        width: 80%;
+      }
+    }
+  
+    .sigh_wrapper .slider_area {
+      padding: 50px 0;
+    }
+  
+    .vertify_area .modal-content {
+      padding: 50px 20px;
+    }
+  
+    .marqee>ul>li a {
+      font-size: 14.4px;
+    }
+  
+    .slider_area {
+      background-size: 130%;
+      background-position: 60% 10% !important;
+
+      // margin-top:-80px;
+    }
+  
+    .bonus_area {
+      left: 0%;
+      margin-top: 0;
+  
+      .bonus_top p.bonus_money {
+        margin: 0;
+      }
+  
+      .bonus_bottom ul li {
+        width: 100%;
+      }
+    }
+  
+    .navbar-collapse ul.nav>li a {
+      padding: 10px 15px;
+    }
+  
+    .mobile_nav li {
+      margin: 0 0px !important;
+    }
+  
+    // .logo {
+    
+    //   img {
+    //     max-width: 120px;
+    //   }
+    // }
+  
+    .chips_money_area {
+      .main_content {
+        margin-bottom: 0vh;
+        padding-bottom: 0;
+      }
+  
+      .total ul li {
+        margin-bottom: 0;
+  
+        input {
+          font-size: 12px;
+        }
+      }
+    }
+  
+    .main_content {
+      padding-bottom: 5vh;
+  
+      /* padding-top: 6vh */
+    }
+  
+    .lottery_title {
+      width: 95%;
+    }
+  
+    .lottery_box {
+      background-size: 450px;
+    }
+  
+    .dropdown-menu-large {
+      margin-left: 0;
+      margin-right: 0;
+  
+      >li {
+        margin-bottom: 30px;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+  
+      .dropdown-header {
+        padding: 3px 15px !important;
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .lobby_gametop {
+      img {
+        // max-width: 80px;
+      }
+  
+    }
+  
+    .copyright p {
+      font-size: 12px;
+    }
+  
+    .bottom_bank {
+      margin-bottom: 0;
+  
+      li {
+        height: 40px;
+        float: none;
+      }
+    }
+  
+    .game_rule_btn {
+      font-size: 16px !important;
+      position: relative;
+      top: -3px;
+  
+      i {
+        position: relative;
+        top: -3px;
+      }
+    }
+  
+    .exist_btn,
+    .new_bank_btn {
+      font-size: 16px;
+    }
+  
+    .modal-content,
+    .att_text {
+      font-size: 12px;
+    }
+  
+    .topic_style span {
+      font-size: 18px;
+      padding: 5px;
+    }
+  
+    .game_btn {
+      top: 115px;
+    }
+  
+    .sigh_area {
+      width: 90%;
+      right: 5%;
+      margin-top: -580px !important;
+      padding: 20px 0px;
+    }
+  
+    .active_area p {
+      font-size: 12px;
+      padding: 10px 0;
+    }
+  
+    .active_text {
+      font-size: 12px;
+      line-height: 1.8;
+      padding: 20px;
+    }
+  
+    .active_title {
+      font-size: 16px;
+    }
+  
+    .game_btn li button {
+      font-size: 12px;
+    }
+  
+    .lottery_loby .lottery_bonus {
+      margin-top: -50px;
+      font-size: 36px;
+    }
+  
+  
+    .lottery_box2 {
+      margin-bottom: 20px;
+    }
+  
+    .draw_num {
+      font-size: 18px;
+      letter-spacing: -1px;
+      margin-top: 0;
+      @include rwdw(480){
+        font-size:font(1.3);
+      }
+    }
+  
+    .topic_hr {
+      margin-bottom: 10px;
+    }
+  
+    
+  
+    .modal-content {
+      max-width: 90%;
+     
+    }
+  
+    .GHL-SlideBar {
+      max-width: 100px;
+    }
+  
+    .bonus_bottom ul {
+      width: 90%;
+    }
+  
+    .trans_box {
+      padding: 20px 0px;
+    }
+  
+    .info_tab .nav-item span {
+      font-size:12px;
+      padding: 5px 10px;
+      
+    }
+  
+    .rank_box {
+      width: 90%;
+      left: 5%;
+      padding: 50px 30px 30px !important;
+    }
+  
+    .rank_title:before {
+      height: 60px;
+      margin-top: -5px;
+    }
+  
+    .SideBar_h5.current_topic:after {
+      border-width: 33px 0 0 28px;
+      margin-top: -8px;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .quicklink ul{
+      padding:0px;
+      li{
+        padding:0px!important;
+        margin-bottom:0px!important;
+      }
+    }
+    .bottom_bank li {
+      width: 30%;
+      height: 30px;
+    }
+  
+    .game_rule_menu {
+      a {
+        font-size: 16px;
+  
+        p {
+          margin-bottom: 0;
+        }
+      }
+  
+      height: 50px;
+    }
+  
+   
+  
+    .mt-xs-40 {
+      margin-top: 40px !important;
+    }
+  
+    .mt-xs-60 {
+      margin-top: 60px !important;
+    }
+  
+    .sigh_area {
+      margin-top: -480px !important;
+    }
+  
+    .card_item {
+      padding: 20px;
+    }
+  
+    .title {
+      margin-bottom: 5px;
+    }
+  
+    .user_info li {
+      margin-bottom: 0;
+    }
+  
+    .info_area {
+      .info_topic {
+        width: 65%;
+  
+        span {
+          padding: 5px 0px;
+        }
+      }
+  
+      .info_box ul li a {
+        padding: 5px 0;
+        font-size: 13.2px;
+      }
+    }
+  
+    .close_float_nav {
+      top: -0px;
+    }
+  
+    .main_area {
+      // padding: 90px 0px 0px;
+    }
+  
+    .chips_icon {
+      // top: 10px;
+    }
+  
+    .SideBar_h5 h5 i {
+      margin-bottom: 5px;
+    }
+  
+    .current_topic {
+      text-align: center;
+    }
+  
+    .chips_box {
+      margin-bottom: 15px;
+    }
+  
+    .current_area {
+      margin-bottom: 10px;
+    }
+  
+    .lottery_loby .rightnow {
+      .current_topic:after {
+        margin-left: 0;
+        right: -48px;
+      }
+  
+      .current_box {
+        background-image: linear-gradient(135deg, #0ccbef 0%, #091f59 45%);
+      }
+    }
+  
+    .group_box {
+      padding: 20px 10px;
+    }
+  
+    .bet_item ul li button {
+      font-size: 14.4px;
+    }
+  
+    .SideBar_h5.current_topic:after {
+      display: none;
+    }
+  
+    .rightnow .current_topic {
+      width: 80%;
+      padding: 8px;
+      background-image: linear-gradient(135deg, #0ccbef 0%, #091f59 70%);
+  
+      span {
+        text-align: left;
+        padding: 0 !important;
+      }
+  
+      &:after {
+        border-width: 70px 0 0 40px;
+        margin-top: -9px;
+        margin-left: 5px;
+      }
+    }
+    .slider_area {
+      .carousel .item {
+        // max-height: 220px !important;
+        // background-size: 120% !important;
+      }
+    }
+  
+    .small_section {
+      padding: 0;
+    }
+  
+    .hot_btn {
+      font-size: 18px;
+      padding: 0;
+    }
+  
+    .lottery_loby {
+      margin-top: 50px !important;
+  
+      .tab-content>.tab-pane {
+        padding: 20px 0 0;
+      }
+  
+      .lottery_box2 .current_box li {
+        width: 10%;
+      }
+  
+      .lottery_list {
+        margin-top: 0;
+      }
+  
+      .lottery_bonus {
+        font-size: 24px !important;
+        margin-top: -40px;
+        position: relative;
+        z-index: 1;
+        margin-left: 20px;
+        right: auto;
+        float: left;
+      }
+  
+      .lottery_icon {
+        position: relative;
+        margin-top: 0;
+  
+        img {
+          max-width: 60px;
+        }
+      }
+  
+      .lottery_topic {
+        margin-left: 10px;
+        padding-top: 10px;
+        font-size: 36px;
+      }
+  
+      .rightnow .current_topic {
+        width: 80%;
+        height: 50px;
+        margin-top: -49px;
+      }
+  
+      .lottery_game_cat .nav-tabs {
+        margin-top: 20px;
+      }
+    }
+  
+    .login_area {
+      display: block;
+      top: 50px;
+    }
+  
+    .card_modal .modal-content {
+      padding: 30px 10px;
+    }
+  
+    .add_card .close_btn {
+      margin-top: -10px;
+    }
+  
+    .vertify_area .modal-content {
+      padding: 30px 10px !important;
+  
+      ul {
+        margin-bottom: 10px;
+      }
+  
+      li {
+        margin-right: 5px;
+  
+        &:after {
+          top: -2px;
+          display: none;
+        }
+  
+        input {
+          padding: 5px;
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  
+    .login_use.modal .modal-content {
+      max-width: 100%;
+    }
+  
+   
+  
+    .bonus_area {
+      left: 0% !important;
+      // margin-top: 20px;
+  
+      .bonus_top {
+        .main_bonus {
+          // border-bottom: 1px solid #7FDBFF;
+          // border-top: 2px solid #7FDBFF;
+          // font-size: 20px;
+          // padding: 0 0 0px;
+          // width: 250px;
+          // margin-right: 0;
+        }
+  
+        p.bonus_money {
+          font-size: 42px;
+        }
+      }
+  
+      .bonus_bottom li {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+      }
+    }
+  
+    .bonus_box {
+      // width: 90% !important;
+      left: 0;
+    }
+  
+    .reciept .modal-dialog,
+    .modal-dialog {
+      width: 100%;
+      top: 5% !important;
+    }
+  
+    .total_calculation ul {
+      margin-top: 0 !important;
+      text-align: center;
+    }
+  
+    .bet_item {
+      padding: 10px 0px 0 !important;
+    }
+  
+    .current_area {
+      padding-top: 5px;
+      font-size: 14px;
+    }
+  
+    .GHL-Chips {
+      padding: 10px 30px;
+  
+      /* width:auto; */
+      min-height: 400px;
+  
+      /* background-image: url(./img/side_bg_straight.png)!important; */
+    }
+  
+    .bet_item {
+      padding: 20px 10px;
+    }
+  
+    .GHL-Chips {
+      padding: 40px 75px 00px !important;
+  
+      /* width: auto; */
+      /* min-height: 381px; */
+      background-image: url(./img/side_bg_straight.png) !important;
+    }
+  
+    .close_btn {
+      float: right;
+      color: #00a3d9;
+      font-size: 20px;
+      position: absolute;
+      right: 0px;
+  
+      /* right: 0; */
+      top: 20px;
+    }
+  
+    .GHL-Chips.close {
+      width: 60px !important;
+    }
+  
+    .total {
+      padding-top: 10px;
+      margin-top: 5px;
+    }
+  
+    .game_chips_box {
+      margin-top: (-300px) !important;
+      padding: 5px !important;
+    }
+  
+    .game_chips_icon img {
+      max-width: 40px !important;
+    }
+  
+    .GHL-Chips-font {
+      font-size: 10px;
+    }
+  
+    .total_calculation li img {
+      width: 100% !important;
+      max-width: 40px;
+    }
+  
+    .GHL-SlideBar {
+      ul {
+        max-height: 50vh;
+      }
+  
+      &.slideBarHeight ul {
+        height: 73vh;
+      }
+    }
+  
+    .tab-pane .GHL-SlideBar {
+      width: 18% !important;
+    }
+  
+    .SideBar_h5.current_topic:before {
+      height: 45px !important;
+      width: 100% !important;
+    }
+  
+    .total_calculation {
+      ul {
+        float: left;
+        width: 100%;
+        text-align: center !important;
+        padding-top: 0 !important;
+      }
+  
+      li {
+        display: inline-block;
+        margin: 3px 0px;
+        width: 15%;
+      }
+  
+      ul.total_btn li {
+        width: auto;
+      }
+    }
+  
+    .total_btn button {
+      font-size: 14px;
+      padding: 3px 5px;
+    }
+  
+    .main_content {
+      width: 80%;
+  
+      /* margin-top:80px; */
+    }
+  
+    .SideBar_h5 {
+      padding: 8px 5px;
+  
+      h5 {
+        font-size: 14px !important;
+        padding-left: 0px !important;
+      }
+    }
+  
+    .GHL-SlideBar {
+      ul {
+        width: 100%;
+        padding: 10px 10px 30px 5px;
+  
+        /* height:48vh; */
+      }
+  
+      li {
+        line-height: 2;
+  
+        a {
+          font-size: 12px;
+          line-height: 1.5;
+        }
+      }
+    }
+  
+    .current_topic span {
+      padding: 0px 10px;
+      float: left;
+      width: 100%;
+    }
+  
+    .lottery_box2 .current_box li span {
+      padding: 0;
+    }
+  
+    .current_box {
+      padding: 5px 15px !important;
+      padding: 15px;
+      margin-bottom: 0px;
+  
+      li {
+        float: left;
+        padding: 0 3px;
+        border-radius: 3px;
+  
+        img {
+          max-width: 15px;
+        }
+  
+        span {
+          padding: 5px 0;
+          font-size: 14px;
+        }
+      }
+    }
+  
+    .bet_item ul li {
+      font-size: 20px !important;
+      margin: 0px 0px 3px !important;
+      height: 55px;
+  
+      /* padding: 10px 3px; */
+    }
+  
+    .win_title {
+      font-size: 16px;
+  
+      /* font-size:25px; */
+      /* margin-bottom:20px; */
+    }
+  
+    .current_topic::before {
+      width: 87%;
+      height: 65px;
+      margin-top: -15px;
+    }
+  
+    .period_num {
+      padding-left: 10px !important;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+  
+  
+    .tab_area .nav-tabs>li>a svg {
+      left: 0;
+    }
+  
+    .tab_area {
+      right: 0 !important;
+    }
+  
+  
+    .bet_item {
+      padding: 10px 3px 5px;
+    }
+  
+    .current_area {
+      font-size: 16px;
+    }
+  
+    .current_topic:before {
+      width: 80%;
+      height: 38px;
+    }
+  
+  
+  
+    .GHL-SlideBar.fixed {
+      top: 130px;
+    }
+  
+    .total {
+      font-size: 14px;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+  
+    .total_calculation li img {
+      max-width: 50px;
+    }
+  
+    .GHL-SlideBar.slideBarHeight ul {
+      height: 75vh;
+      max-height: 80vh;
+    }
+  
+    .GHL-Chips {
+      padding: 10px 30px;
+  
+      /* width:auto; */
+      min-height: 400px;
+    }
+  
+    .SideBar_h5.current_topic:before {
+      height: 45px !important;
+      width: 70% !important;
+    }
+  
+    .total_calculation {
+      li {
+        margin: 0 5px 0 0;
+      }
+  
+      ul {
+        float: left;
+        width: 100%;
+        text-align: center !important;
+      }
+    }
+  
+    .total_btn button {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  
+    .main_content {
+      width: 85% !important;
+    }
+  
+    .SideBar_h5 h5 {
+      font-size: 16px !important;
+    }
+  
+    .GHL-SlideBar {
+      ul {
+        padding: 20px 10px;
+      }
+  
+      li a {
+        font-size: 16px;
+      }
+    }
+  
+    .current_box li {
+      span {
+        font-size: 16px;
+      }
+  
+      width: 30px;
+  
+      img {
+        width: 25px;
+  
+        /* max-width:80px; */
+      }
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    
+    .contact_us {
+      top: calc(50% - 80px);
+      width: 50px;
+      margin-right: -50px;
+      .buttonWrapper {
+          .button {
+              width: 124px;
+              height: 22px;
+              font-size: 12px;
+              i {
+                  margin: 0 3px;
+              }
+          }
+      }
+      .box {
+          min-height: 124px;
+          padding: 5px;
+          flex-direction: column;
+          align-items: center;
+          .item {
+            height: 25px;
+            width: 25px;
+            font-size: 25px;
+            margin: 5px 0;
+          }
+      }
+    }
+
+    .game_live{
+      button{
+        padding:3px 5px;
+        font-size:font(1);
+        width:30px;
+        i{
+          padding:0px;
+          // left: -5px;
+    position: relative;
+        }
+      }
+    }
+   
+    .quicklink{
+      top:-0px;
+      margin-top:20px;
+    }
+    .video-game-button {
+      font-size: font(1.1);
+    }
+  
+  
+    .lobby_catList {
+      li {
+        button {
+          font-size: font(1.1);
+        }
+      }
+    }
+  
+    .lobby_gamebox {
+      padding: 15px 10px;
+    }
+  
+   
+  
+    .hot_btn .quick_btn {
+      top: -8px;
+    }
+
+    .main_area {
+      padding: 80px 0 0px!important;
+    }
+  
+    .game_rule_menu {
+      font-size: 14px;
+    }
+  
+    .histroy_list li a {
+      font-size: 16px;
+    }
+  
+    .card-body {
+      padding: 10px 10px;
+    }
+  
+    .sigh_area {
+      margin-top: -450px !important;
+    }
+  
+    .existed_box li span {
+      width: auto !important;
+      padding: 5px 0 !important;
+    }
+  
+    .close_float_nav {
+      // top: -5px;
+    }
+  
+    .top_menu {
+      // top: 55px !important;
+      // height:45px;
+      // padding:10px 0;
+    }
+  
+    // .navbar .logo img {
+    //   top: -15px !important;
+    //   max-width: 90px !important;
+    // }
+  
+    .navbar-default .navbar-nav>li {
+      width: 20% !important;
+      padding: 0 0px;
+      float: left !important;
+    }
+  
+    .slide_btn_area {
+      width: 80px;
+    }
+  
+    .tab_area_btn {
+      font-size: 13.2px;
+    }
+  
+    .game_title,
+    .page li a {
+      font-size: 12px;
+    }
+  
+    select {
+      font-size: 13.2px !important;
+      padding: 3px 10px;
+    }
+  
+    .topic_hr {
+      /**/
+      margin-bottom: 10px;
+    }
+  
+    .real_table table {
+      margin-top: 0px;
+  
+      th {
+        font-size: 13.2px;
+        padding: 3px 5px;
+        font-weight: initial;
+      }
+  
+      td {
+        font-size: 12px;
+        padding: 3px 5px;
+      }
+    }
+  
+    .search_title {
+      display: none !important;
+    }
+  
+    .topic_style {
+      padding: 3px;
+  
+      span {
+        font-size: 14.4px;
+        padding: 0 5px;
+      }
+    }
+  
+    .circle_btn {
+      
+      font-size: 12px !important;
+      width: 30px !important;
+      height: 30px !important;
+    }
+
+    // .modal-header {
+    //   padding: 10px;
+    // }
+  
+    .current_num li span {
+      font-size: 14.4px;
+    }
+  
+    .info_area .info_topic span {
+      font-size: 15.6px;
+      padding: 0 0px;
+  
+      i {
+        margin-bottom: 0;
+      }
+    }
+  
+    .show_small_pic li {
+      display: inline-block;
+      width: 33.3%;
+      margin-bottom: 10px;
+    }
+  
+    .show_pic img {
+      max-width: 100%;
+    }
+  
+    .main_content {
+      width: 80%;
+    }
+  
+    .bonus_bottom {
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 0;
+    }
+  
+    .GHL-Chips-box {
+      margin-top: 30px;
+    }
+  
+    .game_btn {
+      top: 93px;
+      // padding: 8px 0;
+      // background-image: linear-gradient(135deg, rgba(12, 203, 239, 0.4) 0%, rgba(9, 31, 89, 0.6) 70%);
+  
+      li {
+        width: 25%;
+  
+        button {
+          width: 100%;
+          line-height: 1.1;
+          font-size: 12px;
+          padding: 5px 0;
+        }
+      }
+    }
+  
+    .active_text {
+      padding: 20px 10px;
+    }
+  
+    .info_tab .nav-item {
+      // width: 45%;
+    }
+  
+    .tab-pane select {
+      margin-right: 0 !important;
+    }
+  
+    .rank_box {
+      padding: 50px 20px;
+    }
+  
+    .top_menu {
+      .login_s_area {
+        width: 90% !important;
+        right: 5% !important;
+      }
+  
+      li {
+        padding: 0 5px;
+        font-size: 10px;
+  
+        a {}
+      }
+    }
+  
+    .marqee {
+      top: 0; // top: 55px !important;
+      padding:0px;
+    }
+  
+    .carousel-indicators .active {
+      background-color: transparent;
+      border: 1px solid #00467f;
+    }
+  
+    .carousel.slide .item {
+      // max-height: 200px !important;
+    }
+  
+    .info_area .info_topic:before {
+      width: 80%;
+    }
+  
+    .trans_box li span {
+      float: left;
+      width: 100%;
+      padding: 0px;
+    }
+  
+    .top_menu li a {
+      font-size: 12px !important;
+    }
+  
+    .lottery_loby {
+      padding: 0 15px !important;
+  
+      .lottery_icon img {
+        max-width: 40px;
+      }
+  
+      .lottery_topic {
+        font-size: 24px;
+      }
+  
+      .current_topic:before {
+        width: 80%;
+      }
+    }
+  
+    .sigh_wrapper .login_area {
+      position: relative;
+      display: inline-block;
+      left: 0;
+      margin-bottom: 200px;
+    }
+  
+    .theme_btn,
+    .theme_btn2 {
+      min-width: 100px;
+      font-size: 14.4px;
+    }
+  
+    .sigh_wrapper .slider_area {
+      // background-position: 60% 15% !important;
+  
+      .sigh_area {
+        padding: 30px 10px;
+        right: 5%;
+        width: 90%;
+      }
+    }
+  
+    .login_title {
+      font-size: 21.6px;
+    }
+  
+    .card_modal .modal-dialog {
+      top: 10%;
+    }
+  
+    .main_area .slider_area {
+      background-size: 130%;
+      background-position: 50% 30% !important;
+      margin-top:-10px;
+    }
+  
+    .login_area .login_box .login_s_area {
+      width: 90%;
+    }
+  
+    .login_use.modal {
+      .modal-dialog {
+        top: 10%;
+      }
+  
+      .modal-content .login_s_area {
+        width: 95% !important;
+        margin: 0 10px !important;
+      }
+    }
+  
+    .main_area .bonus_area {
+      .bonus_top p.bonus_money {
+        font-size: 30px;
+      }
+  
+      .bonus_bottom ul {
+        width: 100%;
+      }
+    }
+  
+    .quicklink ul li p {
+      font-size: 12px;
+    }
+  
+    .carousel {
+      margin-top: 00px !important;
+    }
+  
+    .card_title {
+      font-size: 16.8px;
+      margin-bottom: 15px;
+    }
+  
+    .card_item {
+      padding: 20px 15px;
+      height: 130px;
+    }
+  
+    .card_num {
+      font-size: 16.2px;
+    }
+  
+    .svg_nav p {
+      font-size: 12px;
+    }
+  
+    .user_info li {
+      font-size: 13.2px;
+    }
+  
+    .info_area .info_box ul li {
+      padding: 0;
+  
+      a {
+        font-size: 12px;
+      }
+    }
+  
+    .navbar-collapse ul.nav>li a {
+      padding: 0px 0px !important;
+    }
+  
+    .lottery_cat {
+      padding-bottom: 50px;
+    }
+  
+    .lottery_btn {
+      padding: 10px 0;
+    }
+  
+    .lottery_title {
+      font-size: 24px;
+    }
+  
+    .lottery_box {
+      .current_box li {
+        width: 30px;
+      }
+  
+      background-size: 360px !important;
+      height: 260px;
+      padding: 20px 0;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .sigh_area {
+      margin-top: -350px !important;
+      padding: 20px 0px;
+    }
+  
+    .vertify_area .modal-content li input {
+      width: 30px;
+    }
+  
+    .login_area .login_box {
+      right: 6% !important;
+  
+      .login_s_area {
+        width: 90% !important;
+        right: -2% !important;
+        margin-top: -180px !important;
+      }
+    }
+  
+    .lottery_btn li a {
+      font-size: 16px;
+    }
+  
+    .lottery_box .current_box li {
+      width: 25px !important;
+    }
+  
+    .lottery_cat .lottery_box {
+      background-size: 330px !important;
+      height: 240px;
+      padding: 20px 0;
+      margin-bottom: 0 !important;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .bonus_box {
+      // height: 50px;
+    }
+  
+    .main_area .bonus_area .bonus_top p.bonus_money {
+      font-size: 25px;
+    }
+  
+    .sigh_area {
+      margin-top: -325px !important;
+    }
+  
+    .game_current {
+      // margin-top: 30px;
+    }
+  
+    .svg_nav p {
+      font-size: 10.8px;
+    }
+  
+    .current_box li {
+      padding: 0 2px;
+    }
+  
+    .sigh_wrapper .slider_area .sigh_area {
+      width: 90%;
+      right: 5%;
+    }
+  
+    .login_area .login_box {
+      right: 4% !important;
+  
+      .login_s_area {
+        width: 95% !important;
+        padding: 30px 20px;
+        margin-top: -200px !important;
+  
+        label {
+          font-size: 13.2px;
+        }
+      }
+    }
+  
+    .login_use.modal .modal-dialog {
+      top: 10% !important;
+    }
+  
+    .lottery_cat {
+      .lottery_title {
+        width: 250px !important;
+      }
+  
+      .lottery_box {
+        background-size: 280px !important;
+        height: 200px !important;
+  
+        .current_box li {
+          width: 20px !important;
+        }
+      }
+  
+      .lottery_title {
+        margin-top: 0 !important;
+        height: 40px !important;
+      }
+    }
+  }
+  
+  .GHL-Chips {
+    z-index: 9999;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+  
+    &.close {
+      opacity: 1;
+      padding: 10px 20px;
+      text-shadow: 0 0px 0 #fff;
+  
+      .total,
+      .total_calculation {
+        display: none;
+      }
+  
+      .chips_text {
+        display: block;
+        color: #fff;
+        opacity: 1;
+        text-align: left;
+        margin-top: 3px;
+        font-size: 20px;
+        position: absolute;
+        width: 95%;
+        z-index: 100;
+        text-shadow: #6b85e1 2px 2px 3px;
+      }
+    }
+  
+    .chips_text {
+      display: none;
+      padding: 0;
+      margin: 0;
+    }
+  }

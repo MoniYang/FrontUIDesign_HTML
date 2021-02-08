@@ -1,0 +1,225 @@
+@mixin racing_bet_area ($racing_color,$racing_bg) {
+    .racing_game_item{
+      border:2px solid transparent;
+      padding:8px;
+      border-radius: 10px;
+      .racing_game_img{
+        background:$racing_bg;
+        height:110px;
+        display: flex;
+        padding:25px;
+        border-radius: 10px;
+        margin-bottom:10px;
+        justify-content: center;
+      align-items: center;
+       
+      }
+      p{
+        font-size:font(3);
+      color: #fff;
+      margin-bottom: 0px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+    }
+   
+    .racing_bet_area{
+      border:2px solid $racing_color;
+      color:$white;
+      display: flex;
+     
+      border-radius: 8px;
+      padding:0px;
+      
+      .racing_num{
+       float:left;
+       width:50px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      font-size:$font-style;
+      font-weight: bold;
+      font-size:font(1.3);
+       background:$racing_bg;
+       border-radius:0 5px 5px 0;
+      }
+      .racing_bet{
+        width: 100%;
+        background-color: #111;
+        display: flex;
+        height:35px;
+        align-items: center;
+        padding:10px;
+        justify-content: space-around;
+        border-radius: 15px;
+        text-transform: uppercase;
+       
+      }
+      .bet_text{
+        float:left;
+        margin-bottom:0px;
+        font-weight: initial;
+        font-style:italic;
+        color:$gray;
+      }
+      .bet_num{
+        float:left;
+        font-size:font(1.2);
+      }
+    }
+    
+  }
+  
+
+
+  
+
+// racing
+.GP_carlist{
+    width:100%;
+    text-align: center;
+    .car_list{
+      width: 75%;
+      padding-top: 40px;
+      margin: 0 auto;
+      clear: both;
+      float: none;
+      li{
+        padding-top:15px;
+        span{
+          font-size:font(1.5);
+          padding:5px 0;
+        }
+      }
+    }
+  }
+  
+  .racing_game_area{
+    padding:15px 0;
+    li{
+     list-style-type: none;
+    //  margin-bottom:20px;
+     padding:5px;
+    
+    
+     &.active{
+      .racing_game_item{
+       border:2px solid $yellow;
+      }
+      
+     }
+    }
+  }
+  
+  
+  .racing_orange{
+    @include racing_bet_area($orange,$orange);
+  }
+  
+  .racing_blue{
+    @include racing_bet_area($blue,$blue);
+  }
+  .racing_red{
+    @include racing_bet_area($red,$red);
+  }
+  .racing_green{
+    @include racing_bet_area($green,$green);
+  }
+  .racing_gray{
+    @include racing_bet_area($gray,$gray);
+  }
+  .racing_fuchsia{
+    @include racing_bet_area(#c2185b,#c2185b);
+  }
+  
+  .racing_aqua{
+    @include racing_bet_area($aqua,$aqua);
+  }
+  .racing_yellow{
+    @include racing_bet_area(#FFC400,#FFC400);
+  }
+  .racing_purple{
+    @include racing_bet_area($purple,$purple);
+  }
+  
+  .racing_teal{
+    @include racing_bet_area($teal,$teal);
+  }
+  .racing_black{
+    @include racing_bet_area(#36404c,linear-gradient(to bottom, #485563, #29323c));
+  
+  
+  }
+  @media(max-width:991px){
+    .GP_carlist .car_list{
+      padding-top:0px;
+    }
+  }
+  @media(max-width:767px){
+    .GP_carlist {
+      .car_list{
+        padding-top:50px;
+        width: 90%;
+        li{
+          padding:10px 0 0;
+        }
+      }
+    } 
+  }
+  @media(max-width:576px){
+    .GP_carlist .car_list{
+      padding-top:0px;
+      width: 100%;
+    }
+  }
+  @media(max-width:480px){
+    .GP_carlist{
+      .car_list{
+        li{
+          padding-top:5px;
+        }
+      }
+    }
+    .racing_game_area{
+      li{
+        padding: 0 2px;
+      }
+    }
+    .racing_game_item{
+      padding:3px!important;
+      .racing_game_img{
+        padding:5px!important;
+        height:80px!important;
+      }
+    }
+    .racing_bet_area{
+      
+      .racing_bet{
+        padding:10px 2px!important;
+      }
+      .bet_text{
+        font-size:font(1);
+      }
+      .racing_num{
+        font-size:font(1)!important;
+        width:30px!important;
+      }
+    }
+  }
+  @media(max-width:375px){
+    .racing_black .racing_game_item p{
+      font-size:font(2.3);
+    }
+  }
+  @media(max-width:320px){
+    .racing_black .racing_game_item p{
+      font-size:font(2);
+    }
+    .racing_game_item{
+      .racing_game_img{
+        height:80px!important;
+      }
+    }
+  }

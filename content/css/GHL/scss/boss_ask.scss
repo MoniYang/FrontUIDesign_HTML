@@ -1,0 +1,1075 @@
+
+
+
+body {
+  
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.game_chips_box .boss_current_topic {
+  font-size: 21.6px;
+}
+
+.boss_current {
+  color: #fff;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0px 0;
+  border: 2px solid #185e89;
+  border-radius: 3px;
+
+  .period_num {
+    float: left;
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .time_machine {
+    font-size: 21.6px;
+    font-weight: initial;
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+  }
+}
+
+.boss_current_bg {
+  float: left;
+  width: 100%;
+  padding: 10px 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-image: url(../../img/boss_ask_only/blue_btn_slash_first.png);
+}
+
+.boss_current_box {
+  float: left;
+  width: 100%;
+  padding: 10px 10px;
+  background-size: cover;
+  min-height: 60px;
+  // padding: 30px 50px;
+  background-position: 50% 80%;
+  @include rwdw(991){
+    padding:5px;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  li {
+    // padding: 5px 0;
+    font-size: 21.6px;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+
+    span {
+      display: block;
+      float: right;
+      width: 100%;
+    }
+
+    img {
+      max-width: 40px;
+    }
+  }
+}
+
+.game_area {
+  float: left;
+  width: 100%;
+  // margin-top: 20px;
+}
+
+
+
+
+.game_choice {
+  .nav li {
+    white-space: nowrap;
+    margin-bottom: 0;
+    margin-right: -22px;
+    background-image: url("../../img/boss_ask_only/blue_btn_slash.png");
+    background-repeat: no-repeat;
+    color: #FFDC00;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    &.active {
+      background-image: url("../../img/boss_ask_only/red_btn_slash.png");
+      background-repeat: no-repeat;
+      color: #FFDC00;
+      background-size: cover;
+    }
+
+    button {
+      font-size: font(1.5);
+      color: #fff;
+      text-transform: uppercase;
+      padding: 5px;
+      white-space: nowrap;
+      padding: 10px 20px 10px 30px;
+      @include rwdw(767){
+        font-size:font(1.3);
+      }
+    }
+
+    &.active:first-child {
+      background-image: url("../../img/boss_ask_only/red_btn_s.png");
+    }
+
+    &:first-child {
+      margin-right: -30px;
+      background-position: center right;
+      background-image: url("../../img/boss_ask_only/blue_btn_slash_first.png");
+
+      button {
+        padding: 10px 30px 10px 20px;
+      }
+    }
+  }
+
+  .tab-content > .tab-pane {
+    padding: 0;
+  }
+}
+
+.draw_num {
+  margin-left: 40px!important;
+  font-size: 24px;
+  background-image: none !important;
+  margin-top: 5px;
+}
+
+.game_current {
+  color: #fff;
+  float: left;
+  width: 100%;
+  // margin-bottom: 10px;
+
+  ul {
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    li {
+      width: 33%;
+      display: inline-block;
+      list-style-type: none;
+      text-align: center;
+      line-height: 1;
+      padding: 0;
+      position: relative;
+
+      &:last-child .game_current_box:before {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      &:first-child .game_current_box {
+        padding: 0;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    p, span {
+      position: relative;
+      margin-bottom: 0px;
+
+      /* padding-top:5px; */
+    }
+  }
+}
+
+.game_current_box {
+  border-top: 5px solid #7FDBFF;
+  border-bottom: 5px solid #0074D9;
+  border-right: 5px solid #111;
+  border-left: 5px solid #111;
+  height: 50px;
+  padding: 0px 0;
+  text-align: center;
+  font-size: 18px;
+  align-items: center;
+  overflow: hidden;
+  background-color: #aaa;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  &:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-mix-blend-mode: darken;
+    -moz-mix-blend-mode: darken;
+    -o-mix-blend-mode: darken;
+    -ms-mix-blend-mode: darken;
+    position: absolute;
+    top: 0;
+  }
+
+  p, span {
+    position: relative;
+
+    /* z-index: 1; */
+    line-height: 1;
+  }
+}
+
+.game_current ul li.active .game_current_box:before {
+  background-color: rgba(24, 88, 125, 0.57);
+  mix-blend-mode: darken;
+  -webkit-mix-blend-mode: darken;
+  -moz-mix-blend-mode: darken;
+  -o-mix-blend-mode: darken;
+  -ms-mix-blend-mode: darken;
+}
+
+.game_current_box {
+  &:hover:before, &:active:before, &:focus:before {
+    background-color: rgba(24, 88, 125, 0.57);
+    mix-blend-mode: darken;
+    -webkit-mix-blend-mode: darken;
+    -moz-mix-blend-mode: darken;
+    -o-mix-blend-mode: darken;
+    -ms-mix-blend-mode: darken;
+  }
+}
+
+.game_current ul li.active .live_text {
+  color: #FFDC00;
+}
+
+.live_text {
+  position: relative;
+  color: #aaaaaa;
+
+  /* color: #FFDC00; */
+  text-shadow: 1px 1px 6px #333333;
+  width: 100%;
+}
+
+.game_choice {
+  float: left;
+  width: 100%;
+  // min-height: 68vh;
+  @include rwdw(1199){
+    // min-height: 60vh;
+  }
+  @include rwdw(991){
+    // min-height: 40vh;
+    
+  }
+  .nav-tabs {
+    border-bottom: 0;
+    max-width: 99.9%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    li{
+      &.gameRule__btn{
+        button{
+          padding: 10px 15px!important;
+          font-size:font(1.8);
+          @include rwdw(480){
+            padding: 5px 10px!important;
+          }
+        }
+      }
+    }
+  }
+  .racing_area{
+    max-width:99.9%;
+    overflow-x: hidden;
+    position: relative;
+    // overflow-y: auto;
+    scrollbar-width: none;
+  
+    &::-webkit-scrollbar {
+      width: 0px;
+      position: absolute;
+      
+    }
+     
+  }
+}
+
+.game_top_bg ul li {
+  &:last-child{
+    border-right:0px;
+  }
+  // background-image: url("../../img/boss_ask_only/rebet_black.png");
+}
+
+.game_rule_btn {
+  padding: 0px !important;
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 100px;
+}
+
+.game_rank {
+  width: 100%;
+  overflow: hidden;
+//   height: 35px;
+  position: relative;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    // white-space: nowrap;
+    max-width: 99.9%;
+    overflow-x: auto;
+  }
+
+  li {
+    list-style-type: none;
+    color: #fff;
+    width:100%;
+    display: inline-block;
+    padding:0px;
+    text-align: center;
+    border-right: 1px solid #565656;
+
+    button {
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 10px 10px;
+      width:100%;
+      text-shadow: 1px 2px 2px #00D2FC;
+      @include rwdw(991){
+        font-size:font(1.1);
+        padding:8px 0px;
+      }
+    
+    }
+
+    &.active button, &:hover button, &:active button, &:focus button, button.active {
+        background-color:#17577a;
+      color: #FFDC00;
+    }
+  }
+}
+
+.game_chips_topic {
+  color: #aaa;
+  float: left;
+  width: 100%;
+  background-color: #111;
+  padding: 5px;
+  font-size: 14.4px;
+  text-transform: uppercase;
+  display: flex;
+  white-space: nowrap;
+}
+
+.game_chips {
+  // max-height: 360px;
+  // overflow-x: hidden;
+  // overflow-y: auto;
+  float: left;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    position: absolute;
+    top: -10px;
+  }
+
+  li {
+    list-style-type: none;
+    border-right: 2px solid #000;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 2px solid #000;
+    align-items: center;
+    background: linear-gradient(to bottom, #fcfcfc 0%, #dddfe3 48%, #c3c5c9 84%, #9b9b9b 100%);
+    &:hover,
+    &.active,
+    &:focus,
+    &:active{
+        // background-color:$yellow;
+        // background: linear-gradient(to bottom, #fffdd6 0%, #b1c2e2 48%, #a7bce6 84%, #7488b0 100%);
+        // background: linear-gradient(to bottom, #d6f3ff 0%, #91ccde 48%, #81a8d8 84%, #6275ad 100%);
+        background: linear-gradient(to bottom, #fefff9 0%, #eae5bc 48%, #d8cd81 84%, #ad7a62 100%);
+    }
+  }
+
+  input {
+    border-radius: 5px;
+    padding: 8px 8px;
+    text-align: right;
+    width: 100%;
+    border: 0px;
+    font-size: 14.4px;
+    color: #fff;
+    background-color: #3f3f3f;
+    box-shadow: inset 1px 2px 14px 2px #050505;
+    -webkit-box-shadow: inset 1px 2px 14px 2px #050505;
+    -moz-box-shadow: inset 1px 2px 14px 2px #050505;
+    -o-box-shadow: inset 1px 2px 14px 2px #050505;
+  }
+}
+
+
+
+// input[type="checkbox"] {
+//   color: #f2f2f2;
+//   width: 35px;
+//   height: 30px;
+//   margin: -2px 10px 0 0;
+//   vertical-align: middle;
+//   box-shadow: 0 0 0;
+//   cursor: pointer;
+
+//   &:before, &:checked:before {
+//     content: "";
+//     position: absolute;
+//     left: 10px;
+//     margin-top: -8px;
+//     border-radius: 5px;
+//     background-repeat: repeat;
+//     background-size: cover;
+//     width: 30px;
+//     height: 30px;
+//     display: block;
+//   }
+// }
+
+.chips_game_num {
+  font-size: 18px;
+  padding: 15px;
+  float: left;
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.chips_info {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 100%;
+
+  li {
+    width: auto;
+    display: block;
+  }
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    vertical-align: middle;
+    margin-top: 0;
+    // background:#fff;
+    // border:#999 solid 1px;
+    border-radius: 3px;
+    min-height: 25px;
+    min-width: 25px;
+    margin-right: 3px;
+
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.68);
+    border: solid 1px #3d3d3d;
+    background-color: #232323;
+  }
+
+  input[type="checkbox"]:checked {
+    // background: #3190e8;
+
+    background-image: url(../../img/icon/game4dCheck.png);
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.odd {
+  color: #FF4136;
+  text-align: center;
+  font-size: 18px;
+}
+
+.odd_current span {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.chipsContent{
+  // margin-bottom: 110px;
+    float: left;
+    // max-height: 47vh;
+    width: 100%;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    &::-webkit-scrollbar{
+      width:0px;
+    }
+    // @include rwdw(1440){
+    //   max-height:47vh;
+    //   overflow-y: auto;
+    //   &::-webkit-scrollbar{
+    //     width:0px;
+    //   }
+    // }
+    // @include rwdw(1366){
+    //   max-height:53vh;
+    
+    // }
+    // @include rwdw(1280){
+    //   max-height:42vh;
+    // }
+    // @media screen and (orientation: portrait) and (max-width:1024px){
+    //   max-height:100vh;
+    // }
+    // @include rwdw(1024){
+    //   max-height:34vh;
+    // }
+    // @include rwdw(991){
+    //   margin-bottom:0px;
+     
+    // }
+    // @include rwdw(768){
+    //   max-height: 48vh;
+     
+    // }
+    // @include rwdw(575){
+    //   max-height: 38vh;
+     
+    // }
+    // @include rwdw(375){
+    //   max-height:27vh;
+    
+     
+    // }
+    // @include rwdw(360){
+    //   max-height:30vh;
+     
+     
+    // }
+    // @include rwdw(320){
+    //   max-height:23vh;
+     
+     
+    // }
+    // @include rwdw(320){
+    //   max-height: 15vh;
+    //   min-height: 15vh;
+     
+    // }
+}
+
+
+.game_chips_icon {
+  float: right;
+  width:100%;
+
+}
+
+.game_win_title {
+  color: #fff;
+  float: left;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.left_btn, .right_btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px 0 5px;
+}
+
+.game_win {
+  ul {
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  li {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border-radius: 10px;
+    background-color: #111;
+    border: 1px solid #1183c1;
+    list-style-type: none;
+    display: inline-block;
+    color: #fff;
+  }
+}
+
+.game_win_btn {
+  margin: 30px 0;
+  float: left;
+  width: 100%;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    float: left;
+    width: 100%;
+    border: 0;
+    margin-bottom: 12px;
+    padding: 0;
+    text-align: center;
+    border-radius: 0;
+    margin: 0 0 15px;
+
+    button {
+      width: 100%;
+      height: 50px;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.left_btn span {
+  float: left;
+  width: 100%;
+}
+
+.red_btn {
+  background-size: cover;
+  background-image: url("../../img/boss_ask_only/red_btn.png");
+  background-repeat: no-repeat;
+}
+
+.blue_btn {
+  background-size: cover;
+  background-image: url("../../img/boss_ask_only/blue_btn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover,
+  &:active,
+  &:focus{
+    background-image: url("../../img/boss_ask_only/red_btn.png");
+    transition:all .3s ease-in-out;
+  }
+}
+
+.blue_btn_s {
+  background-size: cover;
+  background-image: url("../../img/boss_ask_only/blue_btn_s.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.blue_btn_m {
+  background-size: cover;
+  background-image: url(../../img/boss_ask_only/blue_btn_m.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.focus_num {
+  color: #fff;
+  text-shadow: 1px 1px 1px #111;
+}
+
+.chips_main_btn {
+  float: left;
+
+  button {
+    position: relative;
+    z-index: 1;
+    float: left;
+  }
+}
+
+.game_chips_box {
+  float: left;
+  width:100%;
+  border-radius: 8px;
+  display: flex;
+  // background-color: rgba(0, 0, 0, 0.7);
+  // margin-left: -10px;
+  padding:5px 10px;
+  // position: absolute;
+  // display: none;
+  // margin-top: -350px;
+
+  &.open {
+    display: block;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    &:hover,
+    &.active,
+    &:active{
+      img{
+        @include transition;
+        border-radius: 100%;
+        box-shadow: 0px 0px 12px #FFFFFF;
+-webkit-box-shadow: 0px 0px 12px #FFFFFF;
+-moz-box-shadow: 0px 0px 12px #FFFFFF;
+      }
+    }
+  }
+}
+
+
+
+
+.red_circle {
+  background-color: red;
+  color: #fff;
+  border-radius: 100%;
+  height: 22px;
+  width: 22px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.3;
+  display: block;
+  text-transform: uppercase;
+  // font-weight: bold;
+}
+
+.blue_circle {
+  background-color: #1183c1;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 100%;
+  height: 22px;
+  width: 22px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.3;
+  // font-weight: bold;
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .boss_current_box li {
+    width: 8%;
+    // float: left;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+  
+  .game_current ul li {
+    float: left;
+    width: 33%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .table_topic {
+    max-width: 75px;
+  }
+}
+
+@media (max-width: 767px) {
+ 
+
+  .game_choice .nav li button {
+    font-size: 13.2px;
+  }
+
+  .boss_current_bg {
+    background-size: contain;
+    background-position: left;
+  }
+
+  .boss_current_topic {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+
+  .boss_current {
+    border: 0;
+
+    .period_num {
+      font-size: 21.6px;
+      width: auto;
+      float: none;
+    }
+
+    .time_machine {
+      font-size: 18px;
+    }
+  }
+
+  .boss_current_box {
+    border: 1px solid #185e89;
+    // padding: 15px 10px;
+
+    li {
+      font-size: 16.8px;
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  
+  input[type="checkbox"] {
+    &:checked:before, &:before {
+      background-image: none;
+    }
+  }
+
+
+  .game_current_box {
+    height: 40px;
+    font-size: 13.2px;
+    line-height: 1.2;
+
+    li {
+      padding: 15px 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+   .draw_num {
+    font-size: 14px;
+  }
+
+  // .table_topic {
+  //   max-width: 60px;
+
+  //   li button {
+  //     padding: 8px 0px;
+  //     font-size: 18px;
+  //   }
+  // }
+
+  .chips_game_num {
+    width: 35px;
+    height: 40px;
+    padding: 5px 0;
+    font-size: 15.6px;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .chips_info {
+    height: 40px;
+  }
+
+  .odd_current {
+    @include rwdw(375){
+      width:30%;
+    }
+  
+      span {
+    font-size: 12px;
+      }
+  }
+
+  .game_chips input {
+    padding: 5px 8px;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+
+    &:before {
+      margin-top: -5px;
+    }
+  }
+
+  .game_win_title {
+    font-size: 15.6px;
+  }
+
+  .game_win li {
+    font-size: 16.8px;
+    padding: 5px 6px;
+    border-radius: 5px;
+  }
+  .game_choice {
+    .nav li {
+     
+      button {
+        padding: 10px 28px !important;
+  
+        &.game_rule_btn {
+          padding: 0 !important;
+        }
+      }
+  
+      &:first-child button {
+        padding-left: 10px !important;
+      }
+    }
+  }
+ 
+  .game_amout {
+
+    padding: 5px 0 0;
+  }
+}
+
+@media (max-width: 414px) {
+ 
+
+  .game_current ul {
+    p, span {
+      padding-top: 0;
+    }
+  }
+
+
+  .game_win_btn {
+    margin: 10px 0;
+  }
+
+  .live_text {
+    padding: 5px 0px;
+  }
+
+  .game_current_box {
+    padding: 5px 0 !important;
+  }
+
+  .game_win_title {
+    font-size: 12px;
+  }
+
+  .game_win li {
+    font-size: 14.4px;
+    padding: 3px;
+  }
+
+  .game_amout input {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 375px) {
+  .table_topic {
+    max-width: 40px;
+  }
+
+ 
+
+  .game_amout {
+    font-size: 13.2px;
+  }
+
+  .game_current ul {
+    p, span {
+      font-size: 13.2px;
+    }
+  }
+
+  .draw_num {
+    /* font-size: 18px; */
+    margin-left: 32px;
+  }
+
+  .boss_current .period_num {
+    font-size: 19.2px;
+  }
+
+  .boss_current_box li {
+    font-size: 12px;
+  }
+
+  .boss_current_topic {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  input[type="checkbox"] {
+    &:before {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:checked:before {
+      width: 20px;
+      left: 5px;
+      margin-top: -3px;
+      height: 20px;
+    }
+  }
+
+  .game_win_btn li {
+    margin-bottom: 5px;
+
+    button {
+      height: 35px;
+    }
+  }
+
+ 
+}
+
+@media (max-width: 320px) {
+  .table_topic {
+    max-width: 60px;
+  }
+
+  
+
+  .game_choice .nav li button {
+    font-size: 12px;
+  }
+
+  .boss_current_bg {
+    background-size: 50%;
+    background-position: left;
+  }
+}
+
+/*# sourceMappingURL=boss_ask.css.map */
